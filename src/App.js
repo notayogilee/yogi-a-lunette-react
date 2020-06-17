@@ -5,8 +5,9 @@ import Main from './components/Main';
 import About from './components/About';
 import Videos from './components/Videos';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-import './App.css';
+import './App.scss';
 
 const App = () =>
 
@@ -18,6 +19,7 @@ const App = () =>
       <Route exact path="/videos" component={Videos} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
+    <Footer />
   </Router>
 
 
