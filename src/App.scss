@@ -17,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -97,13 +103,17 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 3rem;
 
   .video-inner {
     width: 320px;
-    height: 500px;
+    height: 300px;
     padding: 1rem;
     margin-bottom: 1rem;
-    // border: solid 1px #333;
+
+    .description {
+      display: none;
+    }
   }
 }
 
