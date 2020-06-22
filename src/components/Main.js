@@ -1,5 +1,5 @@
 import React from 'react';
-import intro from '../img/intro.mp4';
+import intro from '../img/YogiWebsiteLanding.mp4';
 
 
 const Main = () => {
