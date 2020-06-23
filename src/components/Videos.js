@@ -14,6 +14,7 @@ const Videos = () => {
       <div className="video-inner">
         <h3>On S'Inspire de la Pratique Ashtanga</h3>
         <ReactPlayer
+          className="modal-video"
           controls
           width="320"
           height="180"
@@ -24,6 +25,7 @@ const Videos = () => {
             <div id="modal">
               <h3 className="modal-title">On S'Inspire de la Pratique Ashtanga</h3>
               <ReactPlayer
+                className="modal-video"
                 controls
                 width="320"
                 height="180"
