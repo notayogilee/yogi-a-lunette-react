@@ -32,6 +32,7 @@ h3 {
 }
 
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,10 +109,13 @@ h3 {
   }
 }
 #video {
+  position: absolute;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 3rem;
+  top: 50px;
+  transition: all ease 1s;
 
   .video-inner {
     width: 320px;
@@ -119,6 +123,39 @@ h3 {
     padding: 1rem;
     margin-bottom: 1rem;
   }
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  width: 600px;
+  height: 400px;
+  padding: 1rem;
+  z-index: 1000;
+  border: solid 1px #333;
+  background: #fff;
+  color: #333;
+  animation-name: modalFadeIn;
+  animation-duration: 0.5s;
+
+  .modal-title {
+    text-align: center;
+    padding: 0.5rem;
+    animation-name: modalFadeIn;
+    animation-duration: 0.5s;
+  }
+
+  .modal-description {
+    padding: 0.5rem;
+    animation-name: modalFadeIn;
+    animation-duration: 0.5s;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #footer {
@@ -137,5 +174,14 @@ h3 {
   .fab {
     justify-content: right;
     padding: 0.5rem;
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

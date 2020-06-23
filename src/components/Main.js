@@ -1,11 +1,11 @@
 import React from 'react';
-import intro from '../img/YogiWebsiteLanding.mp4';
+import intro from '../img/intro-no-trans.mp4';
 
 
 const Main = () => {
   return (
 
-    <video autoPlay muted loop
+    <video autoPlay muted
       style={{
         position: "absolute",
         width: "100%",

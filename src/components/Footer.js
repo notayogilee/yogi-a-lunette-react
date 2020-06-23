@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="copy">
-        {/* <i class="far fa-copyright">Copyright 2020. All Rights Reserved.</i> */}
+
       </div>
       <div className="social">
         <a href="https://www.facebook.com/pages/category/Yoga-Studio/Yogi-a-Lunette-252704625430721/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a>
