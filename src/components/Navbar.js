@@ -5,14 +5,13 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <div className="logo">
-        <a href="/">HOME</a>
+        <a href="/"><i class="fas fa-home fa-2x"></i></a>
       </div>
-      {/* <h3 className="title" >Yogi A Lunette</h3> */}
       <div className="nav-list">
         <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/videos">Videos</Link></li>
-          <li><Link to="/Contact">Contact</Link></li>
+          <li><Link to="/about" className="text">About</Link></li>
+          <li><Link to="/videos" className="text">Videos</Link></li>
+          <li><Link to="/Contact" className="text">Contact</Link></li>
         </ul>
       </div>
     </nav>

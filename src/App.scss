@@ -36,8 +36,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
-  opacity: 0.6;
   padding: 1rem;
   top: 0;
   height: 80px;
@@ -56,14 +54,6 @@ h3 {
     align-items: center;
     height: 60px;
     width: 60px;
-
-    .nav-img {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px;
-      width: 60px;
-    }
   }
 
   .nav-list ul {
@@ -74,6 +64,9 @@ h3 {
 
     li {
       padding: 1rem;
+      .text {
+        font-weight: 800;
+      }
     }
   }
 }
@@ -109,8 +102,9 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  // background: url(img/water.jpg) no-repeat center center/cover fixed;
   padding: 3rem;
-  top: 80px;
+  padding-top: 80px;
 
   .video-inner {
     width: 320px;
@@ -157,9 +151,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  // background: #fff;
   opacity: 0.6;
-  border-top: solid 1px #333;
   bottom: 0;
   height: 40px;
   width: 100%;
@@ -168,6 +161,7 @@ h3 {
   .fab {
     justify-content: right;
     padding: 0.5rem;
+    // color: #fff;
   }
 }
 
@@ -180,11 +174,66 @@ h3 {
   }
 }
 
-@keyframes modalFadeOut {
-  from {
-    opacity: 1;
+// @keyframes modalFadeOut {
+//   from {
+//     opacity: 1;
+//   }
+//   to {
+//     opacity: 0;
+//   }
+// }
+
+#schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  width: 100%;
+  background: url(img/brick.jpg) no-repeat center center/cover fixed;
+
+  .heading h1 {
+    margin-bottom: 1rem;
   }
-  to {
-    opacity: 0;
+  .body,
+  .table {
+    justify-content: center;
+    align-items: center;
   }
+
+  tr {
+    align-items: center;
+  }
+
+  th {
+    padding: 0.3rem;
+  }
+}
+
+// Contact
+
+#contact-form {
+  margin-bottom: 80px;
+}
+
+.text-fields {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+
+  .text-input {
+    padding: 0.5rem;
+    margin-bottom: 5px;
+  }
+
+  .message-input {
+    height: 200px;
+  }
+}
+
+.message-button {
+  width: 50vw;
+  padding: 0.5rem;
+  margin-top: 5px;
+  border-radius: 15px;
 }
