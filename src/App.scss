@@ -1,5 +1,6 @@
 // font-family: 'Amatic SC', cursive;
 // font-family: 'Raleway', sans-serif;
+// font-family: 'Octin Spraypaint Free', arial;
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -32,7 +33,7 @@ h3 {
 }
 
 #navbar {
-  position: fixed;
+  // position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +42,7 @@ h3 {
   height: 80px;
   width: 100%;
   z-index: 1;
+  background: transparent;
 
   .title {
     font-family: 'Amatic SC', cursive;
@@ -188,12 +190,23 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -80px;
   padding-top: 80px;
   width: 100%;
   background: url(img/brick.jpg) no-repeat center center/cover fixed;
 
+  .schedule {
+    // border: solid 1px #333;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    // opacity: 0.5;
+  }
+
   .heading h1 {
+    font-family: 'Octin Spraypaint Free', arial;
+    font-weight: 400;
     margin-bottom: 1rem;
+    color: rgb(228, 241, 41);
   }
   .body,
   .table {
@@ -202,11 +215,16 @@ h3 {
   }
 
   tr {
-    align-items: center;
+    width: auto;
+    justify-content: space-evenly;
   }
 
   th {
     padding: 0.3rem;
+    color: #fff;
+    font-family: 'Octin Spraypaint Free', arial;
+    font-weight: 400;
+    color: rgb(228, 241, 41);
   }
 }
 
