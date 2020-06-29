@@ -9,8 +9,37 @@ const Videos = () => {
   const [overlay, setOverlay] = useState("");
 
   return (
+    <Fragment>
 
-    <div id="video" className={overlay}>
+      <div class="wrap">
+        <a href="#M"><button>More Info</button></a>
+        <div id="M" class="modal">
+          <div class="modal-content">
+            <a class="closebutton" href="#">&times;</a>
+            <h3>On S'Inspire de la Pratique Ashtanga</h3>
+            <ReactPlayer
+              controls
+              width="320"
+              height="180"
+              url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
+            />
+            <p className="modal-description">55 minutes a la sauce "ASHTANGA"
+              Une pratique dynamique conçue pour réveiller le corps et l'esprit. Inspirer par la série première, nommée: Yoga Chikitsa ( qui veut dire "yoga pour la santé ou yoga thérapie). Nous allons effleurer la série qui, traditionnelement prends entre 90 et 120 minutes a complêter. Je vous donnes des trucs, des variations et de l'humour pour y arrvier!! ;)</p>
+          </div>
+          <a href="#" class="closeoverlay"></a>
+        </div>
+      </div>
+      <div class="clutter">
+        <h3>On S'Inspire de la Pratique Ashtanga</h3>
+        <ReactPlayer
+          controls
+          width="320"
+          height="180"
+          url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
+        /></div>
+    </Fragment>
+  )
+  {/* <div id="video" className={overlay}>
       <div className="video-inner">
         <h3>On S'Inspire de la Pratique Ashtanga</h3>
         <ReactPlayer
@@ -745,7 +774,7 @@ const Videos = () => {
         }
       </div>
     </div>
-  )
+  ) */}
 }
 
 export default Videos;

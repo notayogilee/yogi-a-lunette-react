@@ -153,7 +153,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background: #fff;
   opacity: 0.6;
   bottom: 0;
   height: 40px;
@@ -163,7 +162,6 @@ h3 {
   .fab {
     justify-content: right;
     padding: 0.5rem;
-    // color: #fff;
   }
 }
 
@@ -175,15 +173,6 @@ h3 {
     opacity: 1;
   }
 }
-
-// @keyframes modalFadeOut {
-//   from {
-//     opacity: 1;
-//   }
-//   to {
-//     opacity: 0;
-//   }
-// }
 
 #schedule-container {
   display: flex;
@@ -198,7 +187,7 @@ h3 {
   .schedule {
     // border: solid 1px #333;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
     // opacity: 0.5;
   }
 
@@ -254,4 +243,82 @@ h3 {
   padding: 0.5rem;
   margin-top: 5px;
   border-radius: 15px;
+}
+
+// from demo
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all ease 1s;
+}
+
+.closeoverlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+}
+
+.closebutton {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 auto;
+  display: table;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal:target > .closeoverlay {
+  display: block;
+}
+
+.modal > div {
+  width: 300px;
+  height: 500px;
+  max-width: 75vw;
+  max-height: 75vh;
+  text-align: center;
+  position: relative;
+  background: #131418;
+  z-index: 3;
+}
+
+.wrap,
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  overflow-y: auto;
+}
+
+/*demo fluff */
+
+p {
+  color: green;
+  font-size: 20px;
+  display: block;
+}
+
+button {
+  margin: 2em 0 0 0;
+  cursor: pointer;
 }
