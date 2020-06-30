@@ -193,9 +193,13 @@ h3 {
 
   .heading h1 {
     font-family: 'Octin Spraypaint Free', arial;
-    font-weight: 400;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 2px;
     margin-bottom: 1rem;
     color: rgb(228, 241, 41);
+    text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333,
+      -1px 1px 0 #333, 1px 1px 0 #333;
   }
   .body,
   .table {
@@ -209,11 +213,16 @@ h3 {
   }
 
   th {
+    position: relative;
     padding: 0.3rem;
-    color: #fff;
+    justify-content: center;
+    align-items: center;
     font-family: 'Octin Spraypaint Free', arial;
-    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1.5px;
     color: rgb(228, 241, 41);
+    text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333,
+      -1px 1px 0 #333, 1px 1px 0 #333;
   }
 }
 
@@ -221,6 +230,27 @@ h3 {
 
 #contact-form {
   margin-bottom: 80px;
+}
+
+.heading h1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-fields input,
+textarea {
+  background-color: #333;
+  color: rgb(228, 241, 41);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: rgb(228, 241, 41);
+}
+
+.fa-map-marker-alt {
+  color: rgb(190, 29, 17);
 }
 
 .text-fields {
@@ -243,82 +273,8 @@ h3 {
   padding: 0.5rem;
   margin-top: 5px;
   border-radius: 15px;
-}
-
-// from demo
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  background: rgba(0, 0, 0, 0.5);
-  transition: all ease 1s;
-}
-
-.closeoverlay {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  display: block;
-  z-index: 2;
-  position: fixed;
-  cursor: pointer;
-}
-
-.closebutton {
-  color: red;
-  text-decoration: none;
-  font-size: 30px;
-  margin: 0 auto;
-  display: table;
-}
-
-.modal:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal:target > .closeoverlay {
-  display: block;
-}
-
-.modal > div {
-  width: 300px;
-  height: 500px;
-  max-width: 75vw;
-  max-height: 75vh;
-  text-align: center;
-  position: relative;
-  background: #131418;
-  z-index: 3;
-}
-
-.wrap,
-.modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  overflow-y: auto;
-}
-
-/*demo fluff */
-
-p {
-  color: green;
-  font-size: 20px;
-  display: block;
-}
-
-button {
-  margin: 2em 0 0 0;
-  cursor: pointer;
+  background-color: #333;
+  font-family: 'Octin Spraypaint Free', arial;
+  letter-spacing: 2px;
+  color: rgb(228, 241, 41);
 }

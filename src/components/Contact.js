@@ -6,7 +6,7 @@ const Contact = () => {
       <div id="schedule-container">
         <div className="schedule">
           <div className="heading">
-            <h1>Pour prendre de cours live avec Yogi A Lunette</h1>
+            <h1>Prendre de cours avec Yogi A Lunette</h1>
           </div>
           <div className="body">
             <table className="table">
@@ -51,8 +51,14 @@ const Contact = () => {
           <form>
             <div className="text-fields">
               <input type="text" className="text-input name-input" placeholder="Name" />
+            </div>
+            <div className="text-fields">
               <input type="email" className="text-input email-input" placeholder="Your email address" />
+            </div>
+            <div className="text-fields">
               <input type="text" className="text-input subject-input" placeholder="Subject" />
+            </div>
+            <div className="text-fields">
               <textarea className="text-input message-input" placeholder="Enter Message"></textarea>
             </div>
             <button className="message-button" type="submit">Submit</button>
