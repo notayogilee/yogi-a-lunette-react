@@ -1,5 +1,6 @@
 import React from 'react';
 import intro from '../img/intro-no-trans.mp4';
+import cellphoneIntro from '../img/cellphoneIntro.mp4';
 
 
 const Main = () => {
@@ -12,13 +13,16 @@ const Main = () => {
         height: "100%",
         left: "50%",
         top: "50%",
-        objectFit: "cover",
+        objectFit: "fill",
         transform: "translate(-50%, -50%)",
         zIndex: "-1"
       }}
     >
       <source src={intro} type="video/mp4" />
+
     </video>
+
+
 
   )
 }
