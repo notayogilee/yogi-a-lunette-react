@@ -1,6 +1,5 @@
 import React from 'react';
 import intro from '../img/intro-no-trans.mp4';
-import cellphoneIntro from '../img/cellphoneIntro.mp4';
 
 
 const Main = () => {
