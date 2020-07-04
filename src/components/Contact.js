@@ -7,11 +7,12 @@ const Contact = () => {
       <div id="schedule-container">
         <div className="schedule">
           <div className="heading">
-            <h1>Prendre de cours avec Yogi A Lunette</h1>
+            <h1 className="large">Prendre de cours avec Yogi A Lunette</h1>
+            <h1 className="small">Mon Horaire</h1>
           </div>
           <div className="body">
             <table className="table">
-              <tr>
+              <tr className="schedule-titles">
                 <th>Location</th>
                 <th>Cours</th>
                 <th>Jour</th>
@@ -42,12 +43,58 @@ const Contact = () => {
                 <th>10:00-11:00</th>
               </tr>
             </table>
+
+            {/* responsive for cell */}
+            <div className="table-small">
+              <div className="info">
+                <div className="class-1">
+                  <div className="info-1">
+                    <a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i></a>
+                    <h3>Power Flow</h3>
+                  </div>
+                  <div className="info-2">
+                    <h3>Mardi</h3>
+                    <h3>18:30-19:30</h3>
+                  </div>
+                </div>
+                <div className="class-2">
+                  <div className="info-1">
+                    <a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i></a>
+                    <h3>Yin Nidra</h3>
+                  </div>
+                  <div className="info-2">
+                    <h3>Mardi</h3>
+                    <h3>20:00-21:00</h3>
+                  </div>
+                </div>
+                <div className="class-3">
+                  <div className="info-1">
+                    <a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i></a>
+                    <h3>Yoga Astanga Fusion</h3>
+                  </div>
+                  <div className="info-2">
+                    <h3>Samedi</h3>
+                    <h3>9:00-10:00</h3>
+                  </div>
+                </div>
+                <div className="class-4">
+                  <div className="info-1">
+                    <a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i></a>
+                    <h3>Flow Énergétique</h3>
+                  </div>
+                  <div className="info-2">
+                    <h3>Samedi</h3>
+                    <h3>10:00-11:00</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div id="contact-form">
           <div className="heading">
-            <h1>Envoi moi une message!</h1>
+            <h1>Message moi!</h1>
           </div>
           <form>
             <div className="text-fields">

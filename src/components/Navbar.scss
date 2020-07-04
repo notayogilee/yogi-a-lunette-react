@@ -1,5 +1,4 @@
 #navbar {
-  // position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,3 +38,9 @@
     }
   }
 }
+
+// @media (max-width: 1024px) {
+//   #navbar {
+//     display: none;
+//   }
+// }

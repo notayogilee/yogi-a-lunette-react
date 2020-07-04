@@ -59,6 +59,12 @@
   #video {
     padding: 0;
     width: 100%;
+
+    .modal-description {
+      text-align: center;
+      overflow-wrap: break-word;
+      padding: 0;
+    }
   }
 
   .modal-video,
@@ -80,6 +86,13 @@
   #video {
     padding: 0;
     width: 100%;
+
+    .modal-description {
+      text-align: center;
+      overflow-wrap: break-word;
+      padding: 0;
+      overflow-y: initial;
+    }
   }
 
   .modal-video,
@@ -88,7 +101,7 @@
   }
 
   #modal {
-    top: 0;
+    display: block;
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -101,6 +114,10 @@
   #modal {
     width: 90%;
     height: auto;
+
+    .discription {
+      overflow-wrap: anywhere;
+    }
 
     .modal-video {
       display: inline;

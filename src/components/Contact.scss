@@ -24,6 +24,11 @@
     align-items: center;
   }
 
+  //class of table small is for cell
+  .table-small {
+    display: none;
+  }
+
   tr {
     width: auto;
     justify-content: space-evenly;
@@ -98,4 +103,93 @@ textarea {
   margin-top: 5px;
   border-radius: 15px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 360px) {
+  // #navbar {
+  //   display: none;
+  // }
+
+  #schedule-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    .table {
+      display: none;
+    }
+
+    .table-small {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+
+        .class-1,
+        .class-2,
+        .class-3,
+        .class-4 {
+          border-bottom: solid 1px #333;
+          margin-bottom: 1rem;
+        }
+
+        .info-1,
+        .info-2 {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    // remove to fix schedule first
+    #contact-form {
+      margin-left: 23px;
+
+      .heading {
+        margin-bottom: 10px;
+      }
+
+      .text-fields,
+      .message-button {
+        position: relative;
+        width: 90%;
+      }
+    }
+  }
+
+  .schedule-titles {
+    display: none;
+  }
+
+  .heading {
+    .large {
+      display: none;
+    }
+    .small {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (min-width: 361px) and (max-width: 767px) {
+  .heading {
+    .large {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    .large {
+      display: none;
+    }
+  }
 }
