@@ -1,5 +1,6 @@
 import React from 'react';
 import yogiAbout from '../img/yogiAbout.jpg';
+import './About.scss';
 
 const About = () => {
   return (

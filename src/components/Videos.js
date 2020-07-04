@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactPlayer from 'react-player';
 import Button from './Button';
+import './Video.scss';
 
 const Videos = () => {
 
@@ -11,10 +12,6 @@ const Videos = () => {
 
   return (
     <Fragment>
-
-
-
-
       <div id="video" className={overlay}>
         <div className="video-inner">
           <h3>On S'Inspire de la Pratique Ashtanga</h3>

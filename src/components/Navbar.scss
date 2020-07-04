@@ -1,0 +1,41 @@
+#navbar {
+  // position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  top: 0;
+  opacity: 0.7;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  background: transparent;
+
+  .title {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 70px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+    li {
+      padding: 1rem;
+      .text {
+        font-weight: 800;
+      }
+    }
+  }
+}

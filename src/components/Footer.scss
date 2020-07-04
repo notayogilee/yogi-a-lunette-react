@@ -1,0 +1,20 @@
+#footer {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.7;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+
+  .social {
+    margin-right: 1rem;
+  }
+
+  .fab {
+    justify-content: right;
+    padding: 0.5rem;
+  }
+}

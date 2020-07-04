@@ -1,0 +1,56 @@
+#video {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3rem;
+  padding-top: 80px;
+
+  .video-inner {
+    width: 320px;
+    height: 300px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  top: 90px;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  z-index: 1000;
+  background: #fff;
+  color: #333;
+  animation-name: modalFadeIn;
+  animation-duration: 1s;
+  transition: all ease-in-out 1s;
+
+  .modal-title {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .modal-description {
+    padding: 1rem;
+    font-weight: 800;
+    font-size: large;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
