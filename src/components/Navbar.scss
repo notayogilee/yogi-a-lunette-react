@@ -1,4 +1,5 @@
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +9,6 @@
   height: 80px;
   width: 100%;
   z-index: 1;
-  background: transparent;
 
   .title {
     font-family: 'Amatic SC', cursive;
@@ -22,6 +22,10 @@
     align-items: center;
     height: 60px;
     width: 60px;
+
+    .fa-home {
+      color: set-text-color();
+    }
   }
 
   .nav-list ul {
@@ -34,8 +38,17 @@
       padding: 1rem;
       .text {
         font-weight: 800;
+        color: set-text-color();
       }
     }
+  }
+}
+
+@function set-text-color() {
+  @if (lightness(background-color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
   }
 }
 

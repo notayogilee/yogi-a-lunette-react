@@ -1,20 +1,16 @@
 import React from 'react';
-import yogiAbout from '../img/yogiAbout.jpg';
+import yogiAbout from '../img/showcase.jpg';
 import './About.scss';
 
 const About = () => {
   return (
-    <section id="about">
-      <div className="container">
-        <div className="picture">
-          <img src={yogiAbout} alt="img" className="yogi-pic" />
-        </div>
-        <div className="story">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas recusandae explicabo ratione reiciendis illo earum, aliquam id corrupti magnam non, molestiae quo ab laboriosam ullam ipsa? Modi, repudiandae. Corrupti tempore vel qui harum voluptates. Similique inventore perspiciatis facilis obcaecati suscipit. At illum nesciunt ad consequatur aspernatur. Et, amet. Eligendi nihil ullam quos nisi id hic molestias! Quibusdam, dignissimos! Quod fugit ut officiis dolorum possimus, incidunt sed assumenda, voluptatem autem nam reprehenderit consequuntur ea a ipsa fugiat, similique dolor quo? Sapiente vitae iusto in accusantium ipsam ullam sint, numquam ab inventore consectetur porro odit dolores recusandae architecto animi eos. Harum vero magnam eos unde minus corporis quia officiis consequuntur rerum velit, quo, aperiam delectus consequatur consectetur. Repudiandae, expedita repellendus veritatis facilis qui dolorem temporibus accusantium numquam. Dicta alias maxime, ullam saepe corporis quaerat eos? Aliquid voluptates numquam nemo maxime cupiditate aut. Reprehenderit tempora porro magni molestias nisi aut excepturi modi.</p>
-        </div>
+    <div className="container">
+      <img src={yogiAbout} className="yogi-pic" alt="none" />
+      <div className="text">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aliquid nulla debitis commodi unde pariatur repellendus ipsam cum quas, possimus consequatur laudantium est suscipit consequuntur mollitia non deleniti hic corporis qui magnam? Praesentium repellat iste adipisci porro tempora magnam fugit illum tempore magni aliquam et, atque reprehenderit? Voluptate libero vel soluta numquam ipsa ducimus dolorum, quasi commodi, repudiandae aperiam, veritatis delectus unde quod eveniet blanditiis iusto et adipisci tempore rerum sit magni enim est. Reiciendis id nemo blanditiis deleniti expedita soluta! Placeat dolore id et expedita! Vitae sed soluta possimus nihil veritatis dicta sapiente, ducimus blanditiis quisquam alias porro odit.</p>
       </div>
-    </section>
+    </div>
   )
 }
 
