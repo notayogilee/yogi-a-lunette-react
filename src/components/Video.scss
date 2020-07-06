@@ -11,6 +11,15 @@
     height: 300px;
     padding: 1rem;
     margin-bottom: 1rem;
+
+    h3 {
+      text-align: center;
+    }
+
+    .open-overlay {
+      width: 100%;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -39,6 +48,11 @@
     padding: 1rem;
     font-weight: 800;
     font-size: large;
+  }
+
+  .close-overlay {
+    width: 100%;
+    border-radius: 5px;
   }
 }
 
