@@ -1,57 +1,77 @@
 #sidebar {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   // left: -40%;
   width: 40%;
-  height: 100vh;
+  height: 100%;
   padding: 1rem;
   border: solid 2px #333;
   background: #fff;
   z-index: 1;
+
+  .hidden {
+    left: -40%;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    bottom: 0;
+    transition: all 2s ease;
+
+    .hamnburger {
+      position: absolute;
+      padding-bottom: 5px;
+      transition: all 2s ease;
+    }
+
+    .bar-1,
+    .bar-2,
+    .bar-3 {
+      width: 50px;
+      border-bottom: solid 5px #333;
+      border-radius: 15px;
+      margin-top: 0.5rem;
+    }
+
+    .bar-4 {
+      width: 50px;
+      border-bottom: solid 5px #333;
+      border-radius: 15px;
+      margin-top: 0.5rem;
+      transform: rotateY(44deg) rotate(44deg) translate(20%, 20%);
+    }
+    .bar-5 {
+      display: none;
+    }
+    .bar-6 {
+      width: 50px;
+      border-bottom: solid 5px #333;
+      border-radius: 15px;
+      margin-top: 0.5rem;
+      transform: rotateY(-44deg) rotate(-44deg) translate(17%, 17%);
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .side-list ul li,
+    .social ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 20px 0;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
 }
-
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 50%;
-
-  .hamnburger {
-    display: inline;
-    position: fixed;
-  }
-
-  .bar-1,
-  .bar-2,
-  .bar-3 {
-    width: 50px;
-    border-bottom: solid 5px #333;
-    border-radius: 15px;
-    margin-top: 0.5rem;
-  }
-
-  .bar-1 {
-    width: 50px;
-    border-bottom: solid 5px #333;
-    border-radius: 15px;
-    margin-top: 0.5rem;
-    transform: rotateY(44deg) rotate(44deg) translate(20%, 20%);
-    transition: transform 2s;
-  }
-  .bar-2 {
-    display: none;
-  }
-  .bar-3 {
-    width: 50px;
-    border-bottom: solid 5px #333;
-    border-radius: 15px;
-    margin-top: 0.5rem;
-    transform: rotateY(-44deg) rotate(-44deg) translate(17%, 17%);
-    transition: transform 2s;
-  }
-}
-
 @media (min-width: 1025px) {
   #sidebar {
     display: none;
