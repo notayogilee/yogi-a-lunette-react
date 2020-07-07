@@ -1,13 +1,15 @@
 #sidebar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   // left: -40%;
   width: 40%;
   height: 100%;
   padding: 1rem;
   border: solid 2px #333;
   background: #fff;
+  opacity: 0.9;
   z-index: 1;
+  transition: transform 2s ease;
 
   .hidden {
     left: -40%;
@@ -19,12 +21,12 @@
     flex-direction: column;
     height: 100%;
     bottom: 0;
-    transition: all 2s ease;
+    transition: transform 2s ease;
 
-    .hamnburger {
+    .hamburger {
       position: absolute;
       padding-bottom: 5px;
-      transition: all 2s ease;
+      transition: transform 2s ease;
     }
 
     .bar-1,
@@ -34,6 +36,7 @@
       border-bottom: solid 5px #333;
       border-radius: 15px;
       margin-top: 0.5rem;
+      transition: transform 2s ease;
     }
 
     .bar-4 {
@@ -69,6 +72,7 @@
       margin: 20px 0 20px 0;
       align-items: center;
       justify-content: space-evenly;
+      text-transform: uppercase;
     }
   }
 }

@@ -5,11 +5,11 @@ import './Sidebar.scss';
 const Sidebar = () => {
 
   const [open, setOpen] = useState(false);
-  const [hidden, setHidden] = useState(true);
+  // const [hidden, setHidden] = useState("");
 
   return (
 
-    <div id="sidebar" className={hidden}>
+    <div id="sidebar">
       <div className="container">
         {!open &&
           <div className="hamburger">
@@ -57,7 +57,7 @@ const Sidebar = () => {
           </Fragment>
         }
       </div>
-    </div>
+    </div >
   )
 }
 
