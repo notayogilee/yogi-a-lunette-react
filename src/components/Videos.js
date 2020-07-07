@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactPlayer from 'react-player';
 import './Video.scss';
+import Spinner from './Spinner';
 
 const Videos = () => {
 
@@ -10,7 +11,9 @@ const Videos = () => {
 
 
   return (
-    <Fragment>
+
+
+    < Fragment >
       <div id="video" className={overlay}>
         <div className="video-inner">
           <h3>On S'Inspire de la Pratique Ashtanga</h3>
@@ -18,7 +21,7 @@ const Videos = () => {
             controls
             width="320"
             height="180"
-            url="http://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
+            url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
           />
           {description && id === 1 &&
             <Fragment>
@@ -29,7 +32,7 @@ const Videos = () => {
                   controls
                   width="50vw"
                   height="50vh"
-                  url="http://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
+                  url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
                 />
                 <p className="modal-description">55 minutes a la sauce "ASHTANGA"
               Une pratique dynamique conçue pour réveiller le corps et l'esprit. Inspirer par la série première, nommée: Yoga Chikitsa ( qui veut dire "yoga pour la santé ou yoga thérapie). Nous allons effleurer la série qui, traditionnelement prends entre 90 et 120 minutes a complêter. Je vous donnes des trucs, des variations et de l'humour pour y arrvier!! ;)</p>
@@ -47,7 +50,7 @@ const Videos = () => {
             controls
             width="320"
             height="180"
-            url="http://www.youtube.com/watch?v=lbN1JBbbNKs&t=1s"
+            url="https://www.youtube.com/watch?v=lbN1JBbbNKs&t=1s"
           />
           {description && id === 2 &&
             <Fragment>
@@ -770,7 +773,7 @@ const Videos = () => {
           }
         </div>
       </div>
-    </Fragment>
+    </Fragment >
   )
 }
 
