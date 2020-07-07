@@ -1,11 +1,14 @@
 import React from 'react';
 import yogiAbout from '../img/showcase.jpg';
+import smallYogiAbout from '../img/yogiAbout.jpg';
 import './About.scss';
 
 const About = () => {
   return (
     <div className="container">
       <img src={yogiAbout} className="yogi-pic" alt="none" />
+      <img src={smallYogiAbout} className="small-yogi-pic" alt="none" />
+     
       <div className="text">
         <h2>About Me</h2>
         <p>Claudia Viens pratique Asana-Yoga depuis 2006 et enseigne depuis 2017. Reconnue pour sa passion, sa clarté et sa créativité, son style d'enseignement est un mélange dynamique et stimulant d'inspiration, d'humour et de dur labeur. Maîtrise de la synthèse, sa capacité à récolter et à transmettre les contributions uniques de diverses méthodes de yoga est sans précédent. Claudia croit que la pratique du yoga peut aider n'importe qui à accéder à sa sagesse intérieure, à sa spiritualité authentique et à clarifier sa plus haute expression personnelle.
