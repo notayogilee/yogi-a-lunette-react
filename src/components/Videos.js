@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import ReactPlayer from 'react-player';
 import './Video.scss';
-import Spinner from './Spinner';
 
 const Videos = () => {
 

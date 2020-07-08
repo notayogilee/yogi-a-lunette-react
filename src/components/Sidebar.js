@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div className="big-container">
       {!open &&
         <div className="hamburger">
-          <a onClick={() => { setOpen(true); setHidden("hidden") }} href="#">
+          <a onClick={() => { setOpen(true); setHidden("hidden") }} href="/#">
             <div className="bar-1"></div>
             <div className="bar-2"></div>
             <div className="bar-3"></div>
@@ -23,7 +23,7 @@ const Sidebar = () => {
           {open &&
             <Fragment>
               <div className="x-hamburger">
-                <a onClick={() => { setOpen(false); setHidden("") }} href="#">
+                <a onClick={() => { setOpen(false); setHidden("") }} href="/#">
                   <div className="bar-4"></div>
                   <div className="bar-5"></div>
                   <div className="bar-6"></div>
