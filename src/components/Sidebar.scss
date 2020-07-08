@@ -1,33 +1,8 @@
-#sidebar {
-  position: fixed;
-  top: 0;
-  // left: -40%;
-  width: 40%;
-  height: 100%;
-  padding: 1rem;
-  border: solid 2px #333;
-  background: #fff;
-  opacity: 0.9;
-  z-index: 1;
-  transition: transform 2s ease;
-
-  .hidden {
-    left: -40%;
-  }
-
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    bottom: 0;
-    transition: transform 2s ease;
-
-    .hamburger {
-      position: absolute;
-      padding-bottom: 5px;
-      transition: transform 2s ease;
-    }
+.big-container {
+  .hamburger {
+    position: absolute;
+    padding: 10px;
+    transition: transform 1s ease;
 
     .bar-1,
     .bar-2,
@@ -36,8 +11,31 @@
       border-bottom: solid 5px #333;
       border-radius: 15px;
       margin-top: 0.5rem;
-      transition: transform 2s ease;
+      transition: transform 1s ease;
     }
+  }
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  padding: 1rem;
+  border: solid 2px #333;
+  background: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  transition: transform 1s ease;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    bottom: 0;
+    transition: transform 1s ease;
 
     .bar-4 {
       width: 50px;
@@ -75,6 +73,10 @@
       text-transform: uppercase;
     }
   }
+}
+
+.hidden {
+  transform: translateX(100%);
 }
 @media (min-width: 1025px) {
   #sidebar {
