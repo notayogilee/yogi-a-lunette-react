@@ -11,11 +11,11 @@ const Sidebar = () => {
     <div className="big-container">
       {!open &&
         <div className="hamburger">
-          <a onClick={() => { setOpen(true); setHidden("hidden") }} href="#">
+          <button className="fake-button" onClick={() => { setOpen(true); setHidden("hidden") }} >
             <div className="bar-1"></div>
             <div className="bar-2"></div>
             <div className="bar-3"></div>
-          </a>
+          </button>
         </div>
       }
       <div id="sidebar" className={hidden}>
@@ -23,11 +23,11 @@ const Sidebar = () => {
           {open &&
             <Fragment>
               <div className="x-hamburger">
-                <a onClick={() => { setOpen(false); setHidden("") }} href="#">
+                <button className="fake-button" onClick={() => { setOpen(false); setHidden("") }} >
                   <div className="bar-4"></div>
                   <div className="bar-5"></div>
                   <div className="bar-6"></div>
-                </a>
+                </button>
               </div>
               <div className="links">
                 <div className="side-list">

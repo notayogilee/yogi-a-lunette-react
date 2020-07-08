@@ -5,6 +5,11 @@
     transition: transform 1s ease;
     z-index: 5;
 
+    .fake-button {
+      background: transparent;
+      border: none;
+    }
+
     .bar-1,
     .bar-2,
     .bar-3 {
@@ -37,6 +42,11 @@
     height: 100%;
     bottom: 0;
     transition: transform 1s ease;
+
+    .fake-button {
+      background: transparent;
+      border: none;
+    }
 
     .bar-4 {
       width: 50px;
