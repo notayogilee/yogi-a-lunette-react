@@ -100,18 +100,18 @@ const Contact = () => {
           <div className="heading">
             <h1>Message moi!</h1>
           </div>
-          <form>
+          <form name="contact" method="POST" data-netlify="true">
             <div className="text-fields">
-              <input type="text" className="text-input name-input" placeholder="Name" />
+              <input type="text" name="name" className="text-input name-input" placeholder="Name" />
             </div>
             <div className="text-fields">
-              <input type="email" className="text-input email-input" placeholder="Your email address" />
+              <input type="email" name="email" className="text-input email-input" placeholder="Your email address" />
             </div>
             <div className="text-fields">
-              <input type="text" className="text-input subject-input" placeholder="Subject" />
+              <input type="text" name="subject" className="text-input subject-input" placeholder="Subject" />
             </div>
             <div className="text-fields">
-              <textarea className="text-input message-input" placeholder="Enter Message"></textarea>
+              <textarea name="message" className="text-input message-input" placeholder="Enter Message"></textarea>
             </div>
             <button className="message-button" type="submit">SUBMIT</button>
           </form>
