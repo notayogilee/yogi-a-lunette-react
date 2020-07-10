@@ -40,7 +40,7 @@ const Videos = () => {
             </Fragment>
           }
           {!description &&
-            <button className="open-overlay" onClick={() => { setId(1); setDescription(true); setOverlay("overlay") }} >PLUS</button>
+            <button className="open-overlay" onClick={() => { setId(1); setDescription(true); setOverlay("overlay") }} >DÉTAILS</button>
           }
         </div>
         <div className="video-inner">
