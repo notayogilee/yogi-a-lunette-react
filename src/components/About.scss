@@ -5,6 +5,8 @@
   height: 100vh;
 
   .yogi-pic {
+    position: absolute;
+
     width: 100%;
     height: 100vh;
   }
@@ -32,22 +34,26 @@
 
 @media (max-width: 767px) {
   .container {
-    position: relative;
+    position: fixed;
+    background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)),
+      url('../img/yogiAbout.jpg') center center/cover fixed;
+
     .yogi-pic {
       display: none;
     }
 
     .text {
-      position: absolute;
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 1rem;
+      margin-top: 1rem;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100vw;
       height: 100%;
       background-color: transparent;
-      background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)),
-        url('../img/yogiAbout.jpg') center center/cover;
-      bottom: 0;
+      overflow: auto;
 
       h2 {
         font-size: 2rem;
