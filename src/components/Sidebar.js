@@ -19,7 +19,7 @@ const Sidebar = () => {
         </div>
       }
       <div id="sidebar" className={hidden}>
-        <div className="container">
+        <div className="sidebar-container">
           {open &&
             <Fragment>
               <div className="x-hamburger">

@@ -18,6 +18,7 @@
 
     .open-overlay {
       width: 100%;
+      height: 30px;
       border-radius: 5px;
     }
   }
@@ -28,11 +29,12 @@
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
+  justify-content: center;
   top: 90px;
   width: auto;
   height: auto;
   padding: 1rem;
-  z-index: 1000;
+  z-index: 10;
   background: #fff;
   color: #333;
   animation-name: modalFadeIn;
@@ -74,53 +76,60 @@
     padding: 0;
     width: 100%;
 
-    .modal-description {
-      text-align: center;
-      overflow-wrap: break-word;
-      padding: 0;
+    #modal {
+      top: 5%;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      overflow: auto;
+
+      .modal-video,
+      .modal-title {
+        display: none;
+      }
+
+      .modal-description {
+        // text-align: center;
+        // justify-content: center;
+        // overflow-wrap: break-word;
+        // padding: 0;
+        width: 100%;
+        // height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
+        padding: 0;
+        overflow: auto;
+      }
     }
-  }
-
-  .modal-video,
-  .modal-title {
-    display: none;
-  }
-
-  #modal {
-    top: 0;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
   }
 }
 
 @media (min-width: 361px) and (max-width: 767px) {
-  #video {
-    padding: 0;
-    width: 100%;
-
-    .modal-description {
-      text-align: center;
-      overflow-wrap: break-word;
-      padding: 0;
-      overflow-y: initial;
-    }
-  }
-
-  .modal-video,
-  .modal-title {
-    display: none;
-  }
-
   #modal {
-    display: block;
     position: fixed;
     align-items: center;
     justify-content: center;
     width: 90%;
     height: auto;
+
+    .modal-video {
+      display: none;
+    }
+
+    .modal-description {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 1rem;
+      overflow: auto;
+    }
   }
 }
 
@@ -128,10 +137,6 @@
   #modal {
     width: 90%;
     height: auto;
-
-    .discription {
-      overflow-wrap: anywhere;
-    }
 
     .modal-video {
       display: inline;
