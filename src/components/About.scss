@@ -17,25 +17,33 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-25%, -50%);
+    transform: translate(-70%, -50%);
     height: auto;
     width: 60%;
-    background-color: rgba(0, 0, 0, 0.4);
 
     p {
       color: #fff;
       text-align: center;
-      font-size: 16px;
+      font-size: 25px;
+      text-shadow: 2px 2px 5px #333;
       font-weight: 600;
+      line-height: 2rem;
     }
   }
 }
 
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   p {
+//     width: 100%;
+//     height: 100vh;
+//   }
+// }
+
 @media (max-width: 767px) {
   .container {
     position: fixed;
-    background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)),
-      url('../img/yogiAbout.jpg') center center/cover fixed;
+    background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4)),
+      url('../img/standing.JPG') center center/cover fixed;
 
     .yogi-pic {
       display: none;

@@ -1,5 +1,5 @@
 import React from 'react';
-import yogiAbout from '../img/showcase.jpg';
+import yogiAbout from '../img/standing.JPG';
 import './About.scss';
 
 const About = () => {
