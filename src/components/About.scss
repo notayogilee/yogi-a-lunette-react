@@ -1,29 +1,27 @@
-.container {
+.about-container {
   position: relative;
   width: 100%;
   height: 100vh;
 
-  .yogi-pic {
-    position: absolute;
+  img {
+    position: fixed;
     width: 100%;
     height: 100vh;
   }
 
-  .small-yogi-pic {
-    display: none;
-  }
-
-  .text {
+  .about-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-70%, -50%);
-    height: auto;
-    width: 60%;
+    transform: translate(-60%, -50%);
+    // height: 100vh;
+    width: 70%;
+
+    padding: 100px 0 100px 0;
 
     p {
       color: #fff;
-      // text-align: center;
+      text-align: justify;
       font-size: 25px;
       text-shadow: 0px 0px 10px #333;
       font-weight: 600;
@@ -32,27 +30,21 @@
   }
 }
 
-// @media (min-width: 768px) and (max-width: 1024px) {
-//   p {
-//     width: 100%;
-//     height: 100vh;
-//   }
-// }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    .about-text {
+      padding: 4rem 1rem 4rem 1rem;
+      margin-top: 35%;
+    }
+  }
+}
 
 @media (max-width: 767px) {
-  .container {
-    position: fixed;
-    background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4)),
-      url('../img/standing.JPG') center center/cover fixed;
-
-    .yogi-pic {
-      display: none;
-    }
-
-    .text {
+  .about-container {
+    .about-text {
       text-align: justify;
       text-justify: inter-word;
-      padding: 1rem;
+      padding: 4rem 1rem 4rem 1rem;
       margin-top: 1rem;
       top: 50%;
       left: 50%;
@@ -62,9 +54,6 @@
       background-color: transparent;
       overflow: auto;
 
-      h2 {
-        font-size: 2rem;
-      }
       p {
         color: #fff;
         font-weight: 600;

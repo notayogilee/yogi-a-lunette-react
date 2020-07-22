@@ -1,8 +1,8 @@
-#contact {
+#contact-page {
+  display: fixed;
+  background: url('../img/feet.JPG') no-repeat center center/cover;
+
   .contact-container {
-    width: 100%;
-    height: 100vh;
-    background: url('../img/feet.JPG') center center/cover;
     .bubbles {
       padding-top: 60px;
       padding-bottom: 40px;
@@ -20,26 +20,40 @@
         border: solid 3px #fff;
         opacity: 0.6;
         border-radius: 50%;
+        transition: all 5s;
 
-        .far {
+        h1 {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           color: #fff;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: opacity 1s;
+        }
+
+        .far {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          opacity: 1;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          transition: opacity 1s;
         }
       }
 
       .bubble-1:hover {
-        animation-name: slide;
-        animation-duration: 2s;
-      }
+        h1 {
+          opacity: 1;
+        }
 
-      @keyframes slide {
-        100% {
-          transform: translateX(250px);
+        .far {
+          opacity: 0;
         }
       }
+
       .bubble-2 {
         position: relative;
         width: 110px;
@@ -54,19 +68,50 @@
           left: 50%;
           transform: translate(-50%, -50%);
           color: #fff;
+          transition: opacity 1s;
+        }
+
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: opacity 1s;
+        }
+        .contact {
+          position: absolute;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: solid 1px #fff;
+          height: 110px;
+          width: 90%;
+          opacity: 1;
+
+          h2,
+          .fab {
+            color: #fff;
+            font-size: 30px;
+          }
         }
       }
 
       .bubble-2:hover {
-        animation-name: right-slide;
-        animation-duration: 2s;
-      }
+        h1 {
+          opacity: 1;
+        }
 
-      @keyframes right-slide {
-        100% {
-          transform: translateX(250px);
+        .far {
+          opacity: 0;
         }
       }
+
       .bubble-3 {
         position: relative;
         width: 110px;
@@ -81,16 +126,41 @@
           left: 50%;
           transform: translate(-50%, -50%);
           color: #fff;
+          transition: opacity 1s;
+        }
+
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: opacity 1s;
         }
       }
       .bubble-3:hover {
-        animation-name: slide;
-        animation-duration: 2s;
-      }
+        h1 {
+          opacity: 1;
+        }
 
-      @keyframes slide {
-        100% {
-          transform: translateX(-250px);
+        .far {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-page {
+    width: 100%;
+    .contact-container {
+      .bubbles {
+        .contact {
+          display: flex;
+          flex-direction: column;
         }
       }
     }
