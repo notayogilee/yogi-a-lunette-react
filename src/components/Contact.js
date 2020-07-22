@@ -3,19 +3,20 @@ import './Contact.scss';
 
 const Contact = () => {
 
-  const [slide, setSlide] = useState('');
+  const [slide, setSlide] = useState("");
+
 
   return (
-    <div id="contact-page">
+    <div className="contact-page">
       <div className="contact-container">
         <div className="bubbles">
-          <a href="#" className={slide}>
+          <a href="#" onClick={(() => setSlide("slide"))} >
             <div className="bubble-1">
               <i class="far fa-calendar-alt fa-4x"></i>
               <h1>Schedule</h1>
             </div>
           </a>
-          <a href="#">
+          <a href="#" onClick={(() => setSlide("slide"))}>
             <div className="bubble-2">
               <i class="far fa-comments fa-4x"></i>
               <h1>contact</h1>
@@ -30,7 +31,7 @@ const Contact = () => {
               </div>
             </div>
           </a>
-          <a href="#" className={slide}>
+          <a href="#" onClick={(() => setSlide("slide"))}>
             <div className="bubble-3">
               <i class="far fa-envelope fa-4x"></i>
               <h1>message</h1>

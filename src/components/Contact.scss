@@ -1,4 +1,4 @@
-#contact-page {
+.contact-page {
   display: fixed;
   background: url('../img/feet.JPG') no-repeat center center/cover;
 
@@ -12,6 +12,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      transition: transform 2s ease;
 
       .bubble-1 {
         position: relative;
@@ -92,69 +93,69 @@
           border: solid 1px #fff;
           height: 110px;
           width: 90%;
-          opacity: 1;
-
-          h2,
-          .fab {
-            color: #fff;
-            font-size: 30px;
-          }
-        }
-      }
-
-      .bubble-2:hover {
-        h1 {
-          opacity: 1;
-        }
-
-        .far {
           opacity: 0;
         }
-      }
 
-      .bubble-3 {
-        position: relative;
-        width: 110px;
-        height: 110px;
-        border: solid 3px #fff;
-        opacity: 0.6;
-        border-radius: 50%;
-
-        .far {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        h2,
+        .fab {
           color: #fff;
-          transition: opacity 1s;
-        }
-
-        h1 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: #fff;
-          text-transform: uppercase;
-          opacity: 0;
-          transition: opacity 1s;
+          font-size: 30px;
         }
       }
-      .bubble-3:hover {
-        h1 {
-          opacity: 1;
-        }
+    }
 
-        .far {
-          opacity: 0;
-        }
+    .bubble-2:hover {
+      h1 {
+        opacity: 1;
+      }
+
+      .far {
+        opacity: 0;
+      }
+    }
+
+    .bubble-3 {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border: solid 3px #fff;
+      opacity: 0.6;
+      border-radius: 50%;
+
+      .far {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        transition: opacity 1s;
+      }
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+    }
+    .bubble-3:hover {
+      h1 {
+        opacity: 1;
+      }
+
+      .far {
+        opacity: 0;
       }
     }
   }
 }
 
 @media (max-width: 768px) {
-  #contact-page {
+  .contact-page {
     width: 100%;
     .contact-container {
       .bubbles {
