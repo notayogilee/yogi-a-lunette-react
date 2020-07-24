@@ -15,7 +15,7 @@
   }
 
   .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
+    transform: rotate(45deg);
     background: #333;
   }
 
@@ -84,7 +84,17 @@
   background: #fff;
   opacity: 0.9;
   z-index: 1;
-  transition: opacity 1s ease;
+  animation-name: fade;
+  animation-duration: 1s;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
 
   .links {
     display: flex;
