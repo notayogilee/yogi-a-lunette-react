@@ -33,7 +33,8 @@ const Contact = () => {
           {/* {transition && id === 1 &&} */}
 
           {transition && id === 2 &&
-            <div className="contact">
+
+            <div className="contact" onClick={() => { setTransition(""); setId(0) }}>
               <h2>claudiaviens@gmail.com</h2>
               <a href="https://www.facebook.com/pages/category/Yoga-Studio/Yogi-a-Lunette-252704625430721/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-square fa-2x"></i>
