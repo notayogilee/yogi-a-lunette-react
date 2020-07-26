@@ -14,26 +14,44 @@ const Contact = () => {
     <div className="contact-page">
       <div className="contact-container">
         <div className="bubbles">
+
           <a href="#" onClick={(() => { setId(1); setTransition(!transition) })} >
             <div className="bubble-1">
               <i class="far fa-calendar-alt fa-4x"></i>
               <h1>Schedule</h1>
             </div>
           </a>
+
           <a href="#" onClick={(() => { setId(2); setTransition(!transition) })}>
             <div className="bubble-2">
               <i class="far fa-envelope fa-4x"></i>
               <h1>contact</h1>
-
             </div>
           </a>
-          {/* <a href="#" onClick={(() => { setId(3); setTransition(!transition) })}>
-            <div className="bubble-3">
-              <i class="far fa-envelope fa-4x"></i>
-              <h1>message</h1>
+
+          {transition && id === 1 &&
+            <div onClick={undoTransition} className="schedule">
+              <div className="heading">
+                <h2 className="small">Mon Horaire</h2>
+              </div>
+              <div className="classes">
+                <div className="location">
+                  <h3><a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer">Idolem Brossard <i className="fas fa-map-marker-alt"></i></a></h3>
+                </div>
+                <h3>Intermediaire/Avanacé: Power Flow</h3>
+                <h3>Mardi 18:30 - 19:30</h3>
+                <br />
+                <h3>Tous Niveaux: Yin Nidra</h3>
+                <h3>Mardi 20:00-21:00</h3>
+                <br />
+                <h3>Tous Niveaux: Yoga Astanga Fusion</h3>
+                <h3>Samedi 9:00-10:00</h3>
+                <br />
+                <h3>Débutant: Flow Énergétique</h3>
+                <h3>Samedi 10:00-11:00</h3>
+              </div>
             </div>
-          </a> */}
-          {/* {transition && id === 1 &&} */}
+          }
 
           {transition && id === 2 &&
             // Added double click because of google complete action - can change to single click
@@ -60,12 +78,9 @@ const Contact = () => {
               </div>
             </div>
           }
-
-          {/* {transition && id === 3 &&} */}
-
         </div>
       </div>
-    </div >
+    </div>
   )
 }
 

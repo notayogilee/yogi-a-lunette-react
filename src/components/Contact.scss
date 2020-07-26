@@ -55,6 +55,51 @@
         }
       }
 
+      .schedule {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: solid 1px #fff;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        opacity: 1;
+        z-index: 2;
+        animation-name: background-fade;
+        animation-duration: 1s;
+
+        .classes {
+          .location {
+            justify-content: center;
+            border-bottom: solid 1px #333;
+          }
+          .fa-map-marker-alt {
+            animation: pulse 2s infinite;
+            color: rgb(212, 83, 73);
+            border-radius: 50%;
+          }
+
+          @keyframes pulse {
+            0% {
+              transform: scale(0.9);
+            }
+
+            70% {
+              transform: scale(1.1);
+            }
+
+            100% {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+
       .contact {
         position: absolute;
         display: flex;
@@ -73,11 +118,18 @@
         animation-name: background-fade;
         animation-duration: 1s;
 
-        h2 {
+        th,
+        h2,
+        h3 {
           color: rgba(0, 0, 0, 0.6);
-          opacity: 1;
-          animation-name: text-fade;
+          animation-name: background-fade;
           animation-duration: 7s;
+        }
+
+        a {
+          color: rgba(0, 0, 0, 0.6);
+          animation-name: text-fade;
+          animation-duration: 2s;
         }
 
         #contact-form {
@@ -93,9 +145,8 @@
           height: 100%;
           width: 100%;
           background: #fff;
-          opacity: 1;
           animation-name: background-fade;
-          animation-duration: 1s;
+          animation-duration: 7s;
 
           .text-fields {
             display: flex;
@@ -134,15 +185,6 @@
         }
       }
       @keyframes background-fade {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes text-fade {
         0% {
           opacity: 0;
         }
