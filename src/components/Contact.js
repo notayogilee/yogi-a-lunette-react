@@ -32,11 +32,12 @@ const Contact = () => {
           {transition && id === 1 &&
             <div onClick={undoTransition} className="schedule">
               <div className="heading">
-                <h2 className="small">Mon Horaire</h2>
+                <h2>Mon Horaire</h2>
               </div>
               <div className="classes">
                 <div className="location">
                   <h3><a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer">Idolem Brossard <i className="fas fa-map-marker-alt"></i></a></h3>
+                  <div></div>
                 </div>
                 <h3>Intermediaire/Avanacé: Power Flow</h3>
                 <h3>Mardi 18:30 - 19:30</h3>
@@ -54,7 +55,9 @@ const Contact = () => {
           }
 
           {transition && id === 2 &&
-            // Added double click because of google complete action - can change to single click
+
+            // Add double click because of google complete action? 
+
             <div className="contact" onClick={undoTransition}>
               <div id="contact-form">
                 <h2>yogialunette@gmail.com</h2>

@@ -64,7 +64,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: solid 1px #fff;
         height: 100%;
         width: 100%;
         background: #fff;
@@ -73,15 +72,44 @@
         animation-name: background-fade;
         animation-duration: 1s;
 
-        .classes {
-          .location {
-            justify-content: center;
-            border-bottom: solid 1px #333;
+        .heading {
+          h2 {
+            animation-name: background-fade;
+            animation-duration: 5s;
           }
-          .fa-map-marker-alt {
-            animation: pulse 2s infinite;
-            color: rgb(212, 83, 73);
-            border-radius: 50%;
+        }
+
+        .classes {
+          h3 {
+            animation-name: background-fade;
+            animation-duration: 5s;
+            text-align: center;
+          }
+
+          .location {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            h3 {
+              margin-bottom: 0.5rem;
+            }
+
+            .fa-map-marker-alt {
+              animation: pulse 2s infinite;
+              color: rgb(212, 83, 73);
+              border-radius: 50%;
+            }
+          }
+
+          .location > div {
+            align-items: center;
+            transform: translateX(150%);
+            justify-content: center;
+            width: 25%;
+            height: 0.5rem;
+            border-bottom: solid 1px rgba(0, 0, 0, 0.6);
+            animation-name: background-fade;
+            animation-duration: 5s;
           }
 
           @keyframes pulse {
@@ -110,26 +138,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border: solid 1px #fff;
-        height: 100%;
         width: 100%;
+        height: 100vh;
         background: #fff;
         opacity: 1;
         z-index: 2;
         animation-name: background-fade;
         animation-duration: 1s;
 
-        th,
         h2,
         h3 {
           color: rgba(0, 0, 0, 0.6);
           animation-name: background-fade;
-          animation-duration: 7s;
-        }
-
-        a {
-          color: rgba(0, 0, 0, 0.6);
-          animation-name: text-fade;
-          animation-duration: 2s;
+          animation-duration: 5s;
         }
 
         #contact-form {
@@ -141,17 +162,16 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          border: solid 1px #fff;
-          height: 100%;
+          height: 100vh;
           width: 100%;
           background: #fff;
           animation-name: background-fade;
-          animation-duration: 7s;
+          animation-duration: 5s;
 
           .text-fields {
             display: flex;
             flex-direction: column;
-            width: 50vw;
+            width: 80vw;
 
             .text-input {
               padding: 0.5rem;
@@ -160,7 +180,7 @@
             }
 
             .message-input {
-              height: 200px;
+              height: 10rem;
             }
           }
 
@@ -203,6 +223,14 @@
         display: flex;
         flex-direction: row;
       }
+    }
+  }
+}
+
+@media (max-height: 420px) {
+  .contact {
+    #contact-form > h2 {
+      display: none;
     }
   }
 }
