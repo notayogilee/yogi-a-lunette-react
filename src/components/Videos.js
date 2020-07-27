@@ -10,16 +10,14 @@ const Videos = () => {
 
 
   return (
-
-
     < Fragment >
       <div id="video" className={overlay}>
         <div className="video-inner">
           <h3>On S'Inspire de la Pratique Ashtanga</h3>
           <ReactPlayer
             controls
-            width="320"
-            height="180"
+            width="480"
+            height="270"
             url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
           />
           {description && id === 1 &&

@@ -6,17 +6,18 @@
   padding: 3rem;
   padding-top: 80px;
   background: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
-    url('../img/body-of-water.jpg') center center/cover fixed;
+    url('../img/background.jpg') center center/cover fixed;
 
   .video-inner {
-    width: 320px;
-    height: 300px;
+    width: 40%;
+    height: auto;
     padding: 1rem;
     margin-bottom: 1rem;
 
     h3 {
       text-align: center;
       color: #fff;
+      margin-bottom: 0.5rem;
     }
 
     .open-overlay {
