@@ -5,6 +5,7 @@ import Pagenation from './Pagenation';
 import './VideoNew.scss';
 
 const VideoNew = () => {
+  ;
 
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -16,6 +17,8 @@ const VideoNew = () => {
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const totalPages = Math.ceil(videos.length / videosPerPage);
 
   return (
     <div className="video-container">
@@ -34,10 +37,14 @@ const VideoNew = () => {
           </li>
         ))}
       </ul>
-
+      {currentPage > 1 &&
+        <a href="#" onClick={() => setCurrentPage(currentPage - 1)}>PREV</a>
+      }
 
       <Pagenation videosPerPage={videosPerPage} totalVideos={videos.length} paginate={paginate} />
-
+      {currentPage < totalPages &&
+        <a href="#" onClick={() => setCurrentPage(currentPage + 1)}>NEXT</a>
+      }
     </div>
   )
 };
