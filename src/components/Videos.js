@@ -16,8 +16,8 @@ const Videos = () => {
           <h3>On S'Inspire de la Pratique Ashtanga</h3>
           <ReactPlayer
             controls
-            width="480"
-            height="270"
+            width="320"
+            height="180"
             url="https://www.youtube.com/watch?v=i0uQQFj8as0&t=1s"
           />
           {description && id === 1 &&
@@ -760,7 +760,7 @@ const Videos = () => {
                   url="https://www.youtube.com/watch?v=aiGZmQHecrE&t=1s"
                 />
 
-                <p className="modal-description">Surya Namaskara est  l'enchaînement  de postures le plus connu et  pratiqué en Yoga.  Dynamique et fluide,  elle forme l'union harmonieuse de la respiration avec le  mouvement .  En la pratiquant à tout les jours,  elle deviendra comme une seconde nature. Tu développeras  force et souplesse autant dans ton corps que dans ton esprit..  j 'te l'garanti! ;) Bonne pratique .</p>
+                <p className="modal-description">Surya Namaskara est  l'enchaînement  de postures le plus connu et  pratiqué en Yoga.  Dynamique et fluide,  elle forme l'union harmonieuse de la respiration avec le  mouvement .  En la pratiquant à tout les jours,  elle deviendra comme une seconde nature. Tu développeras  force et souplesse autant dans ton corps que dans ton esprit..  j 'te l'garanti! ;) Bonne pratique.</p>
                 <button className="close-overlay" onClick={() => { setOverlay(""); setDescription(false) }}>MOINS</button>
               </div>
             </Fragment>
