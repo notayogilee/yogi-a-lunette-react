@@ -6,16 +6,26 @@
     align-items: center;
     justify-content: center;
 
-    .page-link {
+    #page-link {
       border: solid 1px #333;
 
       justify-content: center;
       padding: 0.5rem;
     }
 
-    .page-link:hover {
+    #page-link:hover {
       background: rgba(175, 152, 152, 0.767);
       transition: all 1s ease-in-out;
     }
   }
+
+  .highlight {
+    background: #333;
+    color: #fff;
+  }
+
+  // .page-number.active {
+  // background: #333;
+  // color: #fff;
+  // }
 }
