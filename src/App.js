@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import About from './components/About';
-// import Videos from './components/Videos';
-import VideoNew from './components/VideoNew'
+import Videos from './components/Videos';
+// import VideoNew from './components/VideoNew'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -19,7 +19,7 @@ const App = () =>
     <Switch>
       <Route exact path="/" component={Main} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/videos" component={VideoNew} />
+      <Route exact path="/videos" component={Videos} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
     <Footer />
