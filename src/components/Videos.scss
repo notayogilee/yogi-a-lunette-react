@@ -1,3 +1,18 @@
+.styles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+
+  ul {
+    li {
+      padding: 1rem;
+    }
+  }
+}
+
 .video-container {
   width: 100%;
   height: 100%;
@@ -31,7 +46,7 @@
     .paragraph {
       width: 100%;
       height: auto;
-      text-align: center;
+      text-align: justify;
       padding: 1rem;
     }
   }
@@ -44,4 +59,24 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+}
+
+@media (max-width: 1023px) {
+  .video-container {
+    li {
+      flex: 1 0 50%;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .video-container {
+    padding: 4rem 1rem 1rem 1rem;
+
+    li {
+      .paragraph {
+        padding: 0.5rem 0 0.5rem 0;
+        text-align: center;
+      }
+    }
+  }
 }
