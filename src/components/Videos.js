@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 import Pagination from './Pagination';
 import './Videos.scss';
 
-const VideoNew = () => {
+const Videos = () => {
 
   // const [loading, setLoading] = useState(false);
   const [type, setType] = useState("");
@@ -18,11 +18,9 @@ const VideoNew = () => {
     return videos.filter(video => video.type === type);
   }
 
-  const totalVideosOfType = findVideosOfType(videos, type);
-
-
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+  const totalVideosOfType = findVideosOfType(videos, type);
   const currentVideos = totalVideosOfType.slice(indexOfFirstVideo, indexOfLastVideo);
 
   // Change page
@@ -60,7 +58,7 @@ const VideoNew = () => {
         </div>
       }
 
-      <div className="video-container">
+      <div className="video-container" onClick={() => setType("")}>
         <ul className="video-list">
           {currentVideos.map(video => (
 
@@ -70,7 +68,7 @@ const VideoNew = () => {
               <ReactPlayer
                 controls
                 width="90%"
-                height="90%"
+                height="50vh"
                 url={video.url}
               />
 
@@ -90,7 +88,7 @@ const VideoNew = () => {
           </div>
 
           <div className="pagination">
-            <Pagination videosPerPage={videosPerPage} totalVideos={videos.length} paginate={paginate} currentPage={currentPage} />
+            <Pagination videosPerPage={videosPerPage} totalVideos={videos.length} paginate={paginate} currentPage={currentPage} totalVideosOfType={totalVideosOfType} />
           </div>
           <div className="next">
             {currentPage < totalPages &&
@@ -103,4 +101,4 @@ const VideoNew = () => {
   )
 };
 
-export default VideoNew;
+export default Videos;

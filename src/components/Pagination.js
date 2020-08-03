@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import './Pagination.scss';
 
 
-const Pagenation = ({ videosPerPage, totalVideos, paginate, currentPage }) => {
+const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, currentPage }) => {
 
   const [highlight, setHighlight] = useState("");
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(totalVideos / videosPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalVideosOfType.length / videosPerPage); i++) {
     pageNumbers.push(i);
   }
+
   return (
     <nav>
       <ul className="list">

@@ -5,7 +5,6 @@ import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import About from './components/About';
 import Videos from './components/Videos';
-// import VideoNew from './components/VideoNew'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
