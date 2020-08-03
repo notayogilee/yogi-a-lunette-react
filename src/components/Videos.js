@@ -58,7 +58,7 @@ const Videos = () => {
         </div>
       }
 
-      <div className="video-container" onClick={() => setType("")}>
+      <div className="video-container" onClick={() => { setType(""); setCurrentPage(1) }}>
         <ul className="video-list">
           {currentVideos.map(video => (
 
