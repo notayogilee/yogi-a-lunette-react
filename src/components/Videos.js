@@ -68,7 +68,7 @@ const Videos = () => {
               <ReactPlayer
                 controls
                 width="90%"
-                height="50vh"
+                height="300px"
                 url={video.url}
               />
 

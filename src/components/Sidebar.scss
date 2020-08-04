@@ -16,14 +16,14 @@
 
   .toggler:checked + .hamburger > div {
     transform: rotate(45deg);
-    background: #333;
+    background: rgb(138, 172, 168);
   }
 
   .toggler:checked + .hamburger > div:before,
   .toggler:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
-    background: #333;
+    background: rgb(138, 172, 168);
   }
 
   .toggler:checked + .hamburger > div:after {
@@ -110,6 +110,15 @@
       align-items: center;
       justify-content: space-evenly;
       text-transform: uppercase;
+
+      a {
+        font-size: 20px;
+        color: rgb(138, 172, 168);
+
+        .fab {
+          color: rgb(138, 172, 168);
+        }
+      }
     }
   }
 }
