@@ -7,16 +7,13 @@
     justify-content: center;
 
     a {
-      // border: solid 1px #fff;
+      border: solid 1px transparent;
+      border-radius: 5px;
       justify-content: center;
       padding: 0.5rem;
+      margin: 0.1rem;
       color: #fff;
       font-size: 25px;
-
-      // .highlight {
-      //   background: #333;
-      //   color: #fff;
-      // }
     }
 
     a.highlight {
