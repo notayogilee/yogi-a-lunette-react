@@ -9,7 +9,7 @@ const Videos = () => {
   // const [loading, setLoading] = useState(false);
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [videosPerPage, setVideosPerPage] = useState(3);
+  const [videosPerPage, setVideosPerPage] = useState(2);
 
 
   const findVideosOfType = function (videos, type) {
@@ -68,8 +68,8 @@ const Videos = () => {
               <div className="player">
                 <ReactPlayer
                   controls
-                  // width="90%"
-                  // height="100%"
+                  width="100%"
+                  height="100%"
                   url={video.url}
                 />
               </div>
