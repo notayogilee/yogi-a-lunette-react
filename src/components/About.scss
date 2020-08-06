@@ -30,16 +30,16 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 801px) and (max-width: 1280px) {
   .about-container {
     .about-text {
-      padding: 6rem 1rem 4rem 1rem;
+      padding: 4rem 1rem 4rem 1rem;
       margin-top: 30%;
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .about-container {
     .about-text {
       width: 100vw;
