@@ -81,7 +81,8 @@ const Videos = () => {
         </ul>
       </div>
 
-      {type &&
+      {
+        type &&
         <div className="pagination-footer">
           <div className="prev">
             {currentPage > 1 &&
