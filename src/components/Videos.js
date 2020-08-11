@@ -6,7 +6,6 @@ import './Videos.scss';
 
 const Videos = () => {
 
-  // const [loading, setLoading] = useState(false);
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [videosPerPage, setVideosPerPage] = useState(2);
