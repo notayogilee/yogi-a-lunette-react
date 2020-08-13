@@ -23,9 +23,10 @@ const Sidebar = () => {
           <div className="links">
             <div className="side-list">
               <ul>
-                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/about" >About</Link></li>
-                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/videos" >Videos</Link></li>
-                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/contact" >Contact</Link></li>
+                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/" >Om̐</Link></li>
+                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/about" > à propos</Link></li>
+                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/videos" >practiquons</Link></li>
+                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/contact" >connectons</Link></li>
               </ul>
             </div>
             <div className="social">

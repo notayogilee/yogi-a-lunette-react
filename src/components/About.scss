@@ -19,23 +19,9 @@
   padding: 1rem;
 
   p {
-    // font-family: 'Amatic SC', cursive;
-    // font-family: 'Raleway', sans-serif;
-
-    // font-family: 'Cardo', serif;
-    // font-family: 'Chelsea Market', cursive;
-    // font-family: 'Darker Grotesque', sans-serif;
-    // font-family: 'Gloria Hallelujah', cursive;
-    // font-family: 'Gruppo', cursive;
-    // font-family: 'Julius Sans One', sans-serif;
-    font-family: 'Kaushan Script', cursive;
-    // font-family: 'Niramit', sans-serif;
-    // font-family: 'Quattrocento', serif;
-    // font-family: 'Sawarabi Mincho', sans-serif;
-    // font-family: 'Taviraj', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     padding: 1rem 2rem 1rem 2rem;
     color: #fff;
-
     font-weight: 400;
     line-height: 1.6;
     font-size: 30px;
@@ -48,5 +34,16 @@
 @media (max-width: 1024px) {
   .image-holder-1 {
     background: url('../img/standing.jpg') no-repeat right center/cover;
+  }
+}
+
+@media (max-width: 420px) {
+  .text-holder {
+    padding: 0;
+
+    p {
+      padding: 1rem;
+      // text-align: center;
+    }
   }
 }

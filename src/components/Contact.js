@@ -18,14 +18,14 @@ const Contact = () => {
           <a href="#" onClick={(() => { setId(1); setTransition(!transition) })} >
             <div className="bubble-1">
               <i className="far fa-calendar-alt fa-4x"></i>
-              <h1>Schedule</h1>
+              <h1>Live</h1>
             </div>
           </a>
 
           <a href="#" onClick={(() => { setId(2); setTransition(!transition) })}>
             <div className="bubble-2">
               <i className="far fa-envelope fa-4x"></i>
-              <h1>contact</h1>
+              <h1>connectons</h1>
             </div>
           </a>
 
@@ -65,18 +65,21 @@ const Contact = () => {
                 <form name="contact" method="post" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact" />
                   <div onClick="(e) => e.preventDefault()" className="text-fields">
-                    <input type="text" name="name" className="text-input name-input" placeholder="Name" />
+                    <input type="text" name="name" className="text-input name-input" placeholder="Nom" />
                   </div>
                   <div onClick="(e) => e.preventDefault()" className="text-fields">
-                    <input type="email" name="email" className="text-input email-input" placeholder="Your email address" />
+                    <input type="email" name="email" className="text-input email-input" placeholder="Votre adresse email" />
                   </div>
                   <div onClick="(e) => e.preventDefault()" className="text-fields">
-                    <input type="text" name="subject" className="text-input subject-input" placeholder="Subject" />
+                    <input type="text" name="subject" className="text-input subject-input" placeholder="
+En quelques mots" />
                   </div>
                   <div onClick="(e) => e.preventDefault()" className="text-fields">
-                    <textarea name="message" className="text-input message-input" placeholder="Enter Message"></textarea>
+                    <textarea name="message" className="text-input message-input" placeholder="
+Laisser un message"></textarea>
                   </div>
-                  <button className="message-button" type="submit">SUBMIT</button>
+                  <button className="message-button" type="submit">
+                    envoyer</button>
                 </form>
               </div>
             </div>

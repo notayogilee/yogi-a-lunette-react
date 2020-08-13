@@ -6,13 +6,15 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <div className="logo">
-        <a href="/"><i className="fas fa-home fa-2x"></i></a>
+        <a href="/"><h2>Om̐</h2></a>
       </div>
       <div className="nav-list">
         <ul>
-          <li><Link to="/about" className="text">About</Link></li>
-          <li><Link to="/videos" className="text">Videos</Link></li>
-          <li><Link to="/contact" className="text">Contact</Link></li>
+          <li><Link to="/about" className="text">
+            à propos</Link></li>
+          <li><Link to="/videos" className="text">
+            practiquons</Link></li>
+          <li><Link to="/contact" className="text">connectons</Link></li>
         </ul>
       </div>
     </nav>
