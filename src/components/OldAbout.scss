@@ -1,0 +1,112 @@
+.about-container {
+  background: url('../img/standing.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  // .about-text {
+  //   position: absolute;
+  //   color: transparent;
+  //   top: -50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 70%;
+  //   height: 100%;
+
+  p {
+    // font-family: 'Amatic SC', cursive;
+    // font-family: 'Raleway', sans-serif;
+
+    // font-family: 'Cardo', serif;
+    // font-family: 'Chelsea Market', cursive; --NO
+    // font-family: 'Cormorant', serif; --NO
+    font-family: 'Darker Grotesque', sans-serif;
+    // font-family: 'EB Garamond', serif; --NO
+    // font-family: 'Gloria Hallelujah', cursive; --NO
+    // font-family: 'Gruppo', cursive;
+    // font-family: 'Julius Sans One', sans-serif;
+    // font-family: 'Just Me Again Down Here', cursive; --NO
+    // font-family: 'Kaushan Script', cursive; --NO
+    // font-family: 'Niramit', sans-serif;
+    // font-family: 'Old Standard TT', serif; --NO
+    // font-family: 'Quattrocento', serif;
+    // font-family: 'Rock Salt', cursive; --NO
+    // font-family: 'Sawarabi Mincho', sans-serif;
+    // font-family: 'Taviraj', serif;
+    color: #fff;
+    text-align: justify;
+    // text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px #333;
+    // font-weight: 600;
+    line-height: 2rem;
+    z-index: 10;
+  }
+}
+// }
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(102, 133, 130, 0.4);
+}
+
+@media (max-width: 767px) {
+  .about-container {
+    height: 100vh;
+    .about-text {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    .about-text {
+      transform: translate(-50%, -35%);
+      padding: 4rem 1rem 4rem 1rem;
+      margin-top: 40%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    .about-text {
+      transform: translate(-60%, -30%);
+      padding: 4rem 1rem 4rem 1rem;
+      margin-top: 40%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-container {
+    .about-text {
+      width: 100vw;
+      height: 100%;
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 4rem 1rem 4rem 1rem;
+      margin-top: 1rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: transparent;
+      overflow: auto;
+
+      p {
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
