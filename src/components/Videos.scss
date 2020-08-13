@@ -110,7 +110,7 @@
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 421) and (max-width: 1024px) {
   .video-container {
     padding: 2rem 1rem 0 1rem;
 
