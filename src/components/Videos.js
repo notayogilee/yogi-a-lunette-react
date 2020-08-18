@@ -16,6 +16,10 @@ const Videos = () => {
       return videos;
     }
     return videos.filter(video => video.type === type);
+  };
+
+  const truncate = function (totalVideosOfType, videosPerPage) {
+
   }
 
   const indexOfLastVideo = currentPage * videosPerPage;

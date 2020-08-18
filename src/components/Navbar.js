@@ -14,6 +14,8 @@ const Navbar = () => {
             à propos</Link></li>
           <li><Link to="/videos" className="text">
             practiquons</Link></li>
+          <li><Link to="/pranayama" className="text">
+            Respirons</Link></li>
           <li><Link to="/contact" className="text">connectons</Link></li>
         </ul>
       </div>

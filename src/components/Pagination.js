@@ -16,7 +16,6 @@ const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, c
       <ul className="list">
         {pageNumbers.map(number => (
           <li key={number} className="page-number">
-
             {number === currentPage &&
               <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#" className={"highlight"}>
                 {number}
