@@ -7,7 +7,7 @@ import About from './components/About';
 import Videos from './components/Videos';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Pranayama from './components/Pranayama';
+// import Pranayama from './components/Pranayama';
 
 import './App.scss';
 
@@ -20,7 +20,6 @@ const App = () =>
       <Route exact path="/" component={Main} />
       <Route exact path="/about" component={About} />
       <Route exact path="/videos" component={Videos} />
-      <Route exact path="/pranayama" component={Pranayama} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
     <Footer />

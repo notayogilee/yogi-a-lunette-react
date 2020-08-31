@@ -26,7 +26,7 @@ const Sidebar = () => {
                 <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/" >Om̐</Link></li>
                 <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/about" > à propos</Link></li>
                 <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/videos" >practiquons</Link></li>
-                <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/pranayama" >respirons</Link></li>
+                {/* <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/pranayama" >respirons</Link></li> */}
                 <li><Link onClick={() => { setShow(!show); document.getElementById("togglerCheckbox").checked = false; }} to="/contact" >connectons</Link></li>
               </ul>
             </div>
