@@ -1,25 +1,17 @@
 import React from 'react';
-import intro from '../img/intro-no-trans.mp4';
+import './Main.scss';
+import intro from '../img/YogiALunetteLanding.mp4';
 
 
 const Main = () => {
   return (
+    <div id="landing">
+      <video className="landing-video" autoPlay muted loop>
+        <source src={intro} type="video/mp4" />
+      </video>
+      <h1>Yogi A Lunette</h1>
 
-    <video autoPlay muted
-      style={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        left: "50%",
-        top: "50%",
-        objectFit: "fill",
-        transform: "translate(-50%, -50%)",
-        zIndex: "-1"
-      }}
-    >
-      <source src={intro} type="video/mp4" />
-
-    </video>
+    </div>
 
 
 
