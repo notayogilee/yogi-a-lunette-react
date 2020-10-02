@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
-import videos from '../_data/video.json';
+import videos from '../../_data/video.json';
 import ReactPlayer from 'react-player';
-import Pagination from './Pagination';
+import Pagination from '../layout/Pagination';
 import './Videos.scss';
 
 const Videos = () => {
