@@ -14,7 +14,7 @@ let weatherAPI;
 if (process.env.NODE_ENV !== 'production') {
   weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
 } else {
-  weatherAPI = process.env.WEATHER_API_KEY;
+  weatherAPI = WEATHER_API_KEY;
 }
 
 console.log(process.env.WEATHER_API_KEY)
