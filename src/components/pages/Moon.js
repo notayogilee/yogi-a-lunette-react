@@ -19,7 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const Moon = () => {
 
-
+  console.log(weatherAPI)
   //0 – new moon
   //0-0.25 – waxing crescent
   //0.25 – first quarter
