@@ -36,6 +36,7 @@ const Moon = () => {
   useEffect(() => {
     const res = axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations=Montreal&aggregateHours=24&includeAstronomy=true&unitGroup=metric&shortColumnNames=false&contentType=json&key=${weatherAPI}`)
       .then(res => {
+        console.log(res.data)
         setMoonPhase(res.data.locations.Montreal.currentConditions.moonphase);
       })
       .catch((err) => console.log(err))
