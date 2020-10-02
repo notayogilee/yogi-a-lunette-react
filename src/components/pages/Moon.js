@@ -9,41 +9,17 @@ import waningGibbous from '../../img/waningGibbous.png';
 import waningCrescent from '../../img/waningCrescent.png';
 import lastQuarter from '../../img/lastQuarter.png';
 
-let weatherAPI;
-
-if (process.env.NODE_ENV !== 'production') {
-  weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
-} else {
-  weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
-}
-
-console.log(weatherAPI)
-
 const Moon = () => {
-
-  //0 – new moon
-  //0-0.25 – waxing crescent
-  //0.25 – first quarter
-  //0.25-0.5 – waxing gibbous
-  //0.5 – full moon
-  //0.5-0.75 – waning gibbous
-  //0.75 – last quarter
-  //0.75 -1 – waning crescent
-
-  // res.data.locations.Montreal.currentConditions.moonphase
 
   const [moonPhase, setMoonPhase] = useState(0)
 
   useEffect(() => {
-    const res = axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations=Montreal&aggregateHours=24&includeAstronomy=true&unitGroup=metric&shortColumnNames=false&contentType=json&key=${weatherAPI}`)
+    const res = axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations=Montreal&aggregateHours=24&includeAstronomy=true&unitGroup=metric&shortColumnNames=false&contentType=json&key=${process.env.REACT_APP_WEATHER_API_KEY}`)
       .then(res => {
-        console.log(res.data)
         setMoonPhase(res.data.locations.Montreal.currentConditions.moonphase);
       })
       .catch((err) => console.log(err))
   }, []);
-
-  console.log(moonPhase)
 
   return (
     <div className="container">
