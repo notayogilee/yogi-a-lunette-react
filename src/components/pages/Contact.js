@@ -15,14 +15,14 @@ const Contact = () => {
       <div className="contact-container">
         <div className="bubbles">
 
-          <a href="#" onClick={(() => { setId(1); setTransition(!transition) })} >
+          <a href="#!" onClick={(() => { setId(1); setTransition(!transition) })} >
             <div className="bubble-1">
               <i className="far fa-calendar-alt fa-4x"></i>
               <h1>Live</h1>
             </div>
           </a>
 
-          <a href="#" onClick={(() => { setId(2); setTransition(!transition) })}>
+          <a href="#!" onClick={(() => { setId(2); setTransition(!transition) })}>
             <div className="bubble-2">
               <i className="far fa-envelope fa-4x"></i>
               <h1>connectons</h1>

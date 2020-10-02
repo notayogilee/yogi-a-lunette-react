@@ -17,12 +17,12 @@ const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, c
         {pageNumbers.map(number => (
           <li key={number} className="page-number">
             {number === currentPage &&
-              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#" className={"highlight"}>
+              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#!" className={"highlight"}>
                 {number}
               </a>
             }
             {number !== currentPage &&
-              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#">
+              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#!">
                 {number}
               </a>
             }

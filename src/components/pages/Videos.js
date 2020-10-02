@@ -8,7 +8,8 @@ const Videos = () => {
 
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [videosPerPage, setVideosPerPage] = useState(2);
+  // const [videosPerPage, setVideosPerPage] = useState(2);
+  const videosPerPage = 2;
 
 
   const findVideosOfType = function (videos, type) {
@@ -17,10 +18,6 @@ const Videos = () => {
     }
     return videos.filter(video => video.type === type);
   };
-
-  const truncate = function (totalVideosOfType, videosPerPage) {
-
-  }
 
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
@@ -38,25 +35,25 @@ const Videos = () => {
         <div className="styles">
           <ul>
             <li>
-              <a href="#" onClick={() => setType("flow")}>Flow</a>
+              <a href="#!" onClick={() => setType("flow")}>Flow</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("pranayama")}>Pranayama</a>
+              <a href="#!" onClick={() => setType("pranayama")}>Pranayama</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("tutorial")}>Tutorial</a>
+              <a href="#!" onClick={() => setType("tutorial")}>Tutorial</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("chair")}>Chair</a>
+              <a href="#!" onClick={() => setType("chair")}>Chair</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("restorative")}>Restorative</a>
+              <a href="#!" onClick={() => setType("restorative")}>Restorative</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("other")}>Other</a>
+              <a href="#!" onClick={() => setType("other")}>Other</a>
             </li>
             <li>
-              <a href="#" onClick={() => setType("all")}>All</a>
+              <a href="#!" onClick={() => setType("all")}>All</a>
             </li>
           </ul>
         </div>
@@ -89,7 +86,7 @@ const Videos = () => {
         <div className="pagination-footer">
           <div className="prev">
             {currentPage > 1 &&
-              <a href="#" onClick={() => setCurrentPage(currentPage - 1)}>PREV</a>
+              <a href="#!" onClick={() => setCurrentPage(currentPage - 1)}>PREV</a>
             }
           </div>
 
@@ -98,7 +95,7 @@ const Videos = () => {
           </div>
           <div className="next">
             {currentPage < totalPages &&
-              <a href="#" onClick={() => setCurrentPage(currentPage + 1)}>NEXT</a>
+              <a href="#!" onClick={() => setCurrentPage(currentPage + 1)}>NEXT</a>
             }
           </div>
         </div>
