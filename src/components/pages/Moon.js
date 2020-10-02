@@ -9,15 +9,15 @@ import waningGibbous from '../../img/waningGibbous.png';
 import waningCrescent from '../../img/waningCrescent.png';
 import lastQuarter from '../../img/lastQuarter.png';
 
-let weatherAPI;
+let weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
 
-if (process.env.NODE_ENV !== 'production') {
-  weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
-} else {
-  weatherAPI = WEATHER_API_KEY;
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   weatherAPI = process.env.REACT_APP_WEATHER_API_KEY;
+// } else {
+//   weatherAPI = WEATHER_API_KEY;
+// }
 
-console.log(process.env.WEATHER_API_KEY)
+
 
 const Moon = () => {
 
