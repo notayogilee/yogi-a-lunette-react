@@ -17,6 +17,8 @@ if (process.env.NODE_ENV !== 'production') {
   weatherAPI = process.env.WEATHER_API_KEY;
 }
 
+console.log(process.env.NODE_ENV)
+
 const Moon = () => {
 
   console.log(weatherAPI)
