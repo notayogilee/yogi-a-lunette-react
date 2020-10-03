@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.scss';
-import intro from '../../img/YogiALunetteLanding2.mp4';
+import intro from '../../img/YogiALunetteLanding4.mp4';
 
 
 const Main = () => {

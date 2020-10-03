@@ -12,19 +12,22 @@ import Moon from './components/pages/Moon';
 
 import './App.scss';
 
-const App = () =>
+const App = () => {
 
-  <Router>
-    <Navbar />
-    <Sidebar />
-    <Switch>
-      <Route exact path="/" component={Main} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/videos" component={Videos} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/moon" component={Moon} />
-    </Switch>
-    <Footer />
-  </Router>
+  return (
+    <Router>
+      <Navbar />
+      <Sidebar />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/videos" component={Videos} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/moon" component={Moon} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
