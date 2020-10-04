@@ -11,6 +11,18 @@ const Videos = () => {
   // const [videosPerPage, setVideosPerPage] = useState(2);
   const videosPerPage = 2;
 
+  // Truncate video description
+  const truncate = (videoDescription) => {
+    if (videoDescription.length > 350 && videoDescription.charAt(350) === " ") {
+      return videoDescription.substring(0, 350) + "...";
+    } else if (videoDescription.length > 350 && videoDescription.charAt(350) !== " ") {
+      const truncatedText = videoDescription.substring(0, 350);
+      const whiteSpaceIndex = truncatedText.lastIndexOf(" ");
+      return truncatedText.substring(0, whiteSpaceIndex) + "...";
+    } else {
+      return videoDescription;
+    }
+  }
 
   const findVideosOfType = function (videos, type) {
     if (type === "all") {
@@ -74,7 +86,7 @@ const Videos = () => {
                 />
               </div>
 
-              <div className="paragraph">{video.description}</div>
+              <div className="paragraph">{truncate(video.description)}</div>
             </li>
 
           ))}

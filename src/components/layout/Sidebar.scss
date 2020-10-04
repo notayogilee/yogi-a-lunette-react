@@ -83,8 +83,7 @@
   background: #fff;
   opacity: 0.9;
   z-index: 1;
-  animation-name: fade;
-  animation-duration: 1s;
+  animation: fade 1s;
 
   @keyframes fade {
     0% {
@@ -94,6 +93,15 @@
       opacity: 0.9;
     }
   }
+
+  // @keyframes fade-out {
+  //   0% {
+  //     opacity: 0.9;
+  //   }
+  //   100% {
+  //     opacity: 0;
+  //   }
+  // }
 
   .links {
     display: flex;
@@ -123,7 +131,7 @@
   }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 451px) {
   .menu-wrap,
   #sidebar {
     display: none;
