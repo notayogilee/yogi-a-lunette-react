@@ -80,17 +80,17 @@ const Contact = () => {
 
                 <form name="contact" method="post" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact" />
-                  <div onClick="(e) => e.preventDefault()" className="text-fields">
+                  <div onClick={(e) => e.preventDefault()} className="text-fields">
                     <input type="text" name="name" className="text-input name-input" placeholder="Nom" />
                   </div>
-                  <div onClick="(e) => e.preventDefault()" className="text-fields">
+                  <div onClick={(e) => e.preventDefault()} className="text-fields">
                     <input type="email" name="email" className="text-input email-input" placeholder="Votre adresse email" />
                   </div>
-                  <div onClick="(e) => e.preventDefault()" className="text-fields">
+                  <div onClick={(e) => e.preventDefault()} className="text-fields">
                     <input type="text" name="subject" className="text-input subject-input" placeholder="
 En quelques mots" />
                   </div>
-                  <div onClick="(e) => e.preventDefault()" className="text-fields">
+                  <div onClick={(e) => e.preventDefault()} className="text-fields">
                     <textarea name="message" className="text-input message-input" placeholder="
 Laisser un message"></textarea>
                   </div>

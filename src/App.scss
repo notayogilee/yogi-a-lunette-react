@@ -13,3 +13,19 @@ ul {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(77, 76, 76);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 133, 130);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(161, 201, 197);
+}

@@ -6,17 +6,21 @@ import './Videos.scss';
 
 const Videos = () => {
 
+  const [truncated, setTruncated] = useState(true);
+  const [id, setId] = useState(0);
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   // const [videosPerPage, setVideosPerPage] = useState(2);
   const videosPerPage = 2;
 
   // Truncate video description
+  const maxDescriptionLength = 200;
+
   const truncate = (videoDescription) => {
-    if (videoDescription.length > 350 && videoDescription.charAt(350) === " ") {
-      return videoDescription.substring(0, 350) + "...";
-    } else if (videoDescription.length > 350 && videoDescription.charAt(350) !== " ") {
-      const truncatedText = videoDescription.substring(0, 350);
+    if (videoDescription.length > maxDescriptionLength && videoDescription.charAt(maxDescriptionLength) === " ") {
+      return videoDescription.substring(0, maxDescriptionLength) + "...";
+    } else if (videoDescription.length > maxDescriptionLength && videoDescription.charAt(maxDescriptionLength) !== " ") {
+      const truncatedText = videoDescription.substring(0, maxDescriptionLength);
       const whiteSpaceIndex = truncatedText.lastIndexOf(" ");
       return truncatedText.substring(0, whiteSpaceIndex) + "...";
     } else {
@@ -71,7 +75,7 @@ const Videos = () => {
         </div>
       }
 
-      <div className="video-container" onClick={() => { setType(""); setCurrentPage(1) }}>
+      <div className="video-container" onDoubleClick={() => { setType(""); setCurrentPage(1) }}>
         <ul className="video-list">
           {currentVideos.map(video => (
 
@@ -86,7 +90,63 @@ const Videos = () => {
                 />
               </div>
 
-              <div className="paragraph">{truncate(video.description)}</div>
+              {truncated &&
+                <div className="paragraph">
+                  {truncate(video.description)}
+                  <div>
+                    {video.description.length > maxDescriptionLength &&
+                      <a
+                        href="#!"
+                        onClick={() => {
+                          setId(video.id);
+                          setTruncated(false)
+                        }
+                        }
+                      >
+                        plus
+                      </a>
+                    }
+                  </div>
+                </div>
+              }
+
+              {!truncated && video.id === id &&
+                <div className="paragraph">
+                  {video.description}
+                  <div>
+                    {video.description.length > maxDescriptionLength &&
+                      <a
+                        href="#!"
+                        onClick={() => setTruncated(true)}
+                      >
+                        moins
+                    </a>
+                    }
+                  </div>
+                </div>
+              }
+
+              {!truncated && video.id !== id &&
+                <div className="paragraph">
+                  {truncate(video.description)}
+                  <div>
+                    {video.description.length > maxDescriptionLength &&
+                      <a
+                        href="#!"
+                        onClick={() => {
+                          setId(video.id);
+                          setTruncated(false)
+                        }
+                        }
+                      >
+                        plus
+                      </a>
+                    }
+
+                  </div>
+                </div>
+              }
+
             </li>
 
           ))}
