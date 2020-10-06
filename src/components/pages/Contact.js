@@ -72,8 +72,6 @@ const Contact = () => {
 
           {transition && id === 2 &&
 
-            // Add double click because of google complete action? 
-
             <div className="contact" onClick={undoTransition}>
               <div id="contact-form">
                 <h2>yogialunette@gmail.com</h2>

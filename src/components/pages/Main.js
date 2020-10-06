@@ -2,7 +2,6 @@ import React from 'react';
 import './Main.scss';
 import intro from '../../img/YogiALunetteLanding4.mp4';
 
-
 const Main = () => {
   return (
     <div id="landing">
@@ -10,11 +9,7 @@ const Main = () => {
         <source src={intro} type="video/mp4" />
       </video>
       <h1>Yogi A Lunette</h1>
-
     </div>
-
-
-
   )
 }
 

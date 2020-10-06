@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Pagination.scss';
 
-
 const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, currentPage }) => {
 
   const [highlight, setHighlight] = useState("");

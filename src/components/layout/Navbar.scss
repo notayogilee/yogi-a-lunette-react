@@ -45,14 +45,6 @@
   }
 }
 
-@function set-text-color() {
-  @if (lightness(background-color) < 50) {
-    @return #333;
-  } @else {
-    @return #fff;
-  }
-}
-
 @media (max-width: 450px) {
   #navbar {
     display: none;

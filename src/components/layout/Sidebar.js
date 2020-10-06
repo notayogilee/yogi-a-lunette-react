@@ -5,8 +5,6 @@ import './Sidebar.scss';
 const Sidebar = () => {
 
   const [show, setShow] = useState(false);
-  // const [toggle, setToggle] = useState("");
-
 
   return (
     <Fragment>
@@ -52,7 +50,6 @@ const Sidebar = () => {
     </Fragment>
   )
 }
-
 
 export default Sidebar;
 

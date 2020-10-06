@@ -59,7 +59,6 @@
       .schedule {
         position: absolute;
         display: flex;
-        // flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         top: 50%;
@@ -254,9 +253,3 @@
     }
   }
 }
-
-// @media (max-width: 420px) {
-//   .classes > div:first-child {
-//     border-bottom: solid 1px #333;
-//   }
-// }
