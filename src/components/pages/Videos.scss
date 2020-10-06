@@ -1,3 +1,5 @@
+// Intro to videos
+
 .styles {
   background: rgb(102, 133, 130);
   position: fixed;
@@ -24,6 +26,8 @@
   }
 }
 
+// videos page
+
 .video-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,7 @@
 
   .video-list {
     display: flex;
-    height: 100%;
+    height: auto;
     justify-content: space-evenly;
   }
 
@@ -71,7 +75,7 @@
       font-size: 25px;
       font-weight: 600;
       width: 560px;
-      height: auto;
+      height: 100%;
       text-align: justify;
       padding: 1rem;
       color: #fff;
@@ -126,6 +130,8 @@
 .pagination-footer > div > a {
   color: #fff;
 }
+
+// responsive
 
 @media (max-width: 1024px) {
   .video-container {
@@ -193,7 +199,4 @@
       font-size: 20px;
     }
   }
-}
-
-@media (min-width: 1024) {
 }
