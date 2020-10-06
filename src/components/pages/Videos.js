@@ -77,6 +77,7 @@ const Videos = () => {
 
       <div className="video-container" onDoubleClick={() => { setType(""); setCurrentPage(1) }}>
         <ul className="video-list">
+
           {currentVideos.map(video => (
 
             <li key={video.id} >
