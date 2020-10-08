@@ -48,6 +48,7 @@
       margin: 1rem;
       padding: 0.5rem;
       width: 45%;
+      height: auto;
 
       h3 {
         width: 40vw;
@@ -132,12 +133,18 @@
 
 // responsive
 
-@media (min-width: 1025px) and (max-width: 720px) {
+@media (min-width: 1025px) and (max-height: 720px) {
   .video-container {
     .video-list {
-      .player {
-        width: 391.6px !important;
-        height: 220px !important;
+      li {
+        .player {
+          width: 391.6px;
+          height: 220px;
+        }
+        .paragraph {
+          width: 391px;
+          height: 150px;
+        }
       }
     }
   }
