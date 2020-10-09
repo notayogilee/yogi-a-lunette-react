@@ -9,7 +9,7 @@
   {
     "id": "2",
     "title": "Apana Vayu",
-    "description": "none",
+    "description": "",
     "url": "https://www.youtube.com/watch?v=lbN1JBbbNKs&t=1s",
     "type": "flow"
   },
@@ -166,5 +166,26 @@
     "description": "Surya Namaskara est  l'encha\u00EEnement  de postures le plus connu et  pratiqu\u00E9 en Yoga.  Dynamique et fluide,  elle forme l'union harmonieuse de la respiration avec le  mouvement .  En la pratiquant \u00E0 tout les jours,  elle deviendra comme une seconde nature. Tu d\u00E9velopperas  force et souplesse autant dans ton corps que dans ton esprit..  j 'te l'garanti! ;) Bonne pratique.",
     "url": "https://www.youtube.com/watch?v=aiGZmQHecrE&t=1s",
     "type": "flow"
+  },
+  {
+    "id": "25",
+    "title": "Sitali, Sitkari & Kaki",
+    "description": "3 facons de te rafraichie cet \u00E9t\u00E9 sans air climatis\u00E9!!!!! :)\r\nC'est ce que je te propose avec Sitali, Sitkari et Kaki Pranayama.\r\nJe t'explique en d\u00E9tails ces trois techniques toujours avec un peu d'humour.\r\nA pratiquer  lorsque la chaleur ce fait sentir, peu importe celle-ci;  canicule estivale, pression bouillonante au travail ou m\u00EAme ces fameuse bouff\u00E9es de chaleurs  \u00E0 la m\u00E9nopause.\r\nBonne pratique.    :)",
+    "url": "https://www.youtube.com/watch?v=j2Uj4di_HQY&t=1s",
+    "type": "pranayama"
+  },
+  {
+    "id": "26",
+    "title": "Une 'twist' pour une flexion au sol",
+    "description": "Un tutoriel de 5 minutes dans une posture au sol, les jambes et genoux en flexion, ajout\u00E9 d'une torsion. Une variation int\u00E9ressante qui ne manque pas d'imagination!\r\nAu sol: pour te permettre de stabiliser le corps\r\nEn flexion: pour allonger le dos et masser l'abdomen\r\nEn torsion: pour aprofondir le massage et  detoxifier les organes.\r\nAvec le positionnement des bras, onapporte de l'ouverture et de la longueur au haut du corps pour ainsi permettre aux poumons d'amener un MAX de O2. Les \u00E9paules savourent une magnifique ouverture. \r\nJ'aime beaucoup la pratiquer \u00E0 la fin d'une s\u00E9ance, juste avant Shavasana.",
+    "url": "https://www.youtube.com/watch?v=fvW5GEPGxVE&t=1s",
+    "type": "tutorial"
+  },
+  {
+    "id": "27",
+    "title": "Nava-Ganesha",
+    "description": "C'est avec beaucoup de plaisir que l'on pratique une  variation de Navasana  avec, comme inspiration, l'un des Dieux les plus connus en Inde, GANESH.\r\n\r\nEn nouant orteils et doigts,  on danse avec nos jambes et nos bras en ayant comme petit tr\u00E9pier, nos fessier!   Ganesh a comme monture, une souris.\r\nDans cette posture, on aura l'impression d'\u00EAtre litt\u00E9ralement assis dessus! \r\n \r\nComme dans la vie,  le d\u00E9fi ici est de  demeurer stable face \u00E0 l'obstacle. Avec l'aide de Ganapati, on combine force et souplesse, autant dans le corps que dans l'esprit. De  nouveaux commencements s'offrent \u00E0 nous,  du succ\u00E8s et de la sagesse.\r\n\r\nOm Gam Ganapataye Namaha",
+    "url": "https://www.youtube.com/watch?v=fFZreBo_w4M&t=1s",
+    "type": "other"
   }
 ]

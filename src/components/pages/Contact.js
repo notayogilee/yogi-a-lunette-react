@@ -31,9 +31,28 @@ const Contact = () => {
 
           {transition && id === 1 &&
             <div onClick={undoTransition} className="schedule">
+              {/* <h2>Unfortunately for the moment all classes can only be given online</h2> */}
 
               <div className="classes">
-                <div className="location">
+                <div className="class">
+                  <h3>Tous Niveaux: Yin Nidra</h3>
+                  <h3>Mardi 20h30-21h30</h3>
+                  <a href="https://idolemyoga.podia.com/mardi-20h00-yoga-nidra-avec-marc-offert-par-idolem-brossard" target="_blank" rel="noopener noreferrer">Allons-y</a>
+                </div>
+
+                <div className="class">
+                  <h3>Tous Niveaux: Chakras Flow</h3>
+                  <h3>Jeudi 16h00 - 17h00</h3>
+                  <a href="https://idolemyoga.podia.com/direct-4-jeudi-16h15-tous-niveaux-yoga-chakras-flow-avec-claudia-offert-par-idolem-blainville" target="_blank" rel="noopener noreferrer" >Allons-y</a>
+                </div>
+              </div>
+              <div className="idolem-link">
+                <h3><a href="https://idolemyoga.podia.com/abonnements" target="_blank" rel="noopener noreferrer">Pour avoir un essai gratiut cliquez ici</a></h3>
+              </div>
+
+
+
+              {/* <div className="location">
                   <h3><a href="https://www.google.com/maps/place/5840+Taschereau+Blvd,+Brossard,+QC+J4W+1M6/@45.4768478,-73.4692905,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc90573f84838c3:0xe0e26f62c9164785!8m2!3d45.4768478!4d-73.4671018" target="_blank" rel="noopener noreferrer">Idolem Brossard <i className="fas fa-map-marker-alt"></i></a></h3>
                   <div></div>
                 </div>
@@ -47,11 +66,11 @@ const Contact = () => {
                 <h3>Samedi 9:00-10:00</h3>
                 <br />
                 <h3>Débutant: Flow Énergétique</h3>
-                <h3>Samedi 10:20-11:20</h3>
-              </div>
+                <h3>Samedi 10:20-11:20</h3> */}
+              {/* </div>
 
-              <div className="classes">
-                <div className="location">
+              <div className="classes"> */}
+              {/* <div className="location">
                   <h3><a href="https://www.google.com/maps/place/Idolem+Hot+Yoga+Blainville/@45.6766731,-73.8863607,15z/data=!4m5!3m4!1s0x0:0xcea3f9762710b504!8m2!3d45.6766731!4d-73.8863607" target="_blank" rel="noopener noreferrer">Idolem Blainville <i className="fas fa-map-marker-alt"></i></a></h3>
                   <div></div>
                 </div>
@@ -65,8 +84,8 @@ const Contact = () => {
                 <h3>Jeudi 17:45 - 19:00</h3>
                 <br />
                 <h3>Tous Niveaux: Yin</h3>
-                <h3>Jeudi 19:15 - 20:30</h3>
-              </div>
+                <h3>Jeudi 19:15 - 20:30</h3> */}
+
             </div>
           }
 
