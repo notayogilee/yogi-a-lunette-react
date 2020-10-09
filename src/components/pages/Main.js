@@ -8,7 +8,7 @@ const Main = () => {
       <video className="landing-video" autoPlay muted loop>
         <source src={intro} type="video/mp4" />
       </video>
-      <h1>Yogi A Lunette</h1>
+      <h1>Yogi À Lunette</h1>
     </div>
   )
 }
