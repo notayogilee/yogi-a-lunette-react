@@ -4,15 +4,15 @@ export default function Timer() {
 
   const [showTimer, setShowTimer] = useState(false);
 
-  const [timerDays, setTimerDays] = useState('00');
-  const [timerHours, setTimerHours] = useState('00');
-  const [timerMinutes, setTimerMinutes] = useState('00');
-  const [timerSeconds, setTimerSeconds] = useState('00');
+  const [timerDays, setTimerDays] = useState('');
+  const [timerHours, setTimerHours] = useState('');
+  const [timerMinutes, setTimerMinutes] = useState('');
+  const [timerSeconds, setTimerSeconds] = useState('');
 
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('October 26, 2020 18:00:00').getTime();
+    const countdownDate = new Date('October 21, 2020 18:00:00').getTime();
 
 
     interval = setInterval(() => {
@@ -51,8 +51,9 @@ export default function Timer() {
     <div style={{ color: "#fff" }}>
 
       {showTimer &&
-        `Next live class in ${timerDays} days ${timerHours} hours ${timerMinutes} minutes ${timerSeconds} seconds`
+        `Prochain cours en direct dans ${timerDays} jours ${timerHours} heures ${timerMinutes} minutes ${timerSeconds} secondes`
       }
+
       {!showTimer &&
         'Namaste!'
       }
