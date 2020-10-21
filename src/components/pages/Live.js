@@ -8,8 +8,8 @@ export default function Live() {
     <div className="live-container">
 
       <TwitchPlayer
-        channel="notayogilee"
-        id="notayogilee"
+        channel="yogialunette"
+        id="yogialunette"
         height="60%"
         width="60%"
         hideControls="true"

@@ -45,13 +45,17 @@ export default function Timer() {
     return () => {
       clearInterval(interval.current);
     }
-  }, [])
+  }, []);
 
+  const days = timerDays ? `${timerDays} jours` : '';
+  const hours = timerHours ? `${timerHours} heures` : '';
+  const minutes = timerMinutes ? `${timerMinutes} minutes` : '';
+  const seconds = timerSeconds ? `${timerSeconds} seconds` : '';
   return (
     <div style={{ color: "#fff" }}>
 
       {showTimer &&
-        `Prochain cours en direct dans ${timerDays} jours ${timerHours} heures ${timerMinutes} minutes ${timerSeconds} secondes`
+        `Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`
       }
 
       {!showTimer &&
