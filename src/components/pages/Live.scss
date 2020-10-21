@@ -1,0 +1,19 @@
+.live-container {
+  background: rgb(138, 172, 168);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  h1 {
+    padding: 1rem;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

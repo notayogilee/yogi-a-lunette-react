@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import videos from '../../_data/video.json';
 import ReactPlayer from 'react-player';
 import Pagination from '../layout/Pagination';
@@ -50,6 +51,9 @@ const Videos = () => {
       {!type &&
         <div className="styles">
           <ul>
+            <li>
+              <Link to="/live">Live Stream</Link>
+            </li>
             <li>
               <a href="#!" onClick={() => setType("flow")}>Flow</a>
             </li>
