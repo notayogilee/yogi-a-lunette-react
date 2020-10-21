@@ -12,7 +12,7 @@ export default function Timer() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('October 21, 2020 18:00:00').getTime();
+    const countdownDate = new Date('October 26, 2020 18:00:00').getTime();
 
 
     interval = setInterval(() => {
