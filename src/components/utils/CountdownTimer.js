@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 
 export default function Timer() {
 
-  const [showTimer, setShowTimer] = useState(false);
 
   const [timerDays, setTimerDays] = useState('');
   const [timerHours, setTimerHours] = useState('');
@@ -10,10 +9,10 @@ export default function Timer() {
   const [timerSeconds, setTimerSeconds] = useState('');
 
   let interval = useRef();
+  const [showTimer, setShowTimer] = useState(true);
 
   const startTimer = () => {
     const countdownDate = new Date('October 26, 2020 18:00:00').getTime();
-
 
     interval = setInterval(() => {
       const now = new Date().getTime();

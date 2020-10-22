@@ -9,11 +9,14 @@
   overflow-x: hidden;
 
   h1 {
-    padding: 1rem;
-    width: 100%;
-    color: #fff;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 60%;
+    font-size: 30px;
+    font-weight: inherit;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: solid 0.5px #fff;
   }
 }
