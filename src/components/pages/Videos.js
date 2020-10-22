@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import videos from '../../_data/video.json';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import Pagination from '../layout/Pagination';
 import './Videos.scss';
 
