@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import Navbar from './components/layout/Navbar';
@@ -13,8 +13,10 @@ import Live from './components/pages/Live';
 
 import './App.scss';
 
-ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+function initializeAnalytics() {
+  ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 
 const history = createBrowserHistory();
@@ -26,7 +28,7 @@ history.listen(location => {
 });
 
 const App = () => {
-
+  initializeAnalytics();
 
   return (
     <Router history={history}>
