@@ -7,9 +7,7 @@ import About from './components/pages/About';
 import Videos from './components/pages/Videos';
 import Contact from './components/pages/Contact';
 import Footer from './components/layout/Footer';
-import Moon from './components/pages/Moon';
 import Live from './components/pages/Live';
-// import Pranayama from './components/Pranayama';
 
 import './App.scss';
 
