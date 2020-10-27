@@ -14,7 +14,7 @@ import Live from './components/pages/Live';
 import './App.scss';
 
 function initializeAnalytics() {
-  ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+  ReactGA.initialize(`${process.env.REACT_APP_GA_MEASUREMENT_ID}`);
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
