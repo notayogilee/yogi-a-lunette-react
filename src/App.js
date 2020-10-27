@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -14,6 +14,7 @@ import Live from './components/pages/Live';
 import './App.scss';
 
 ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const history = createBrowserHistory();
 
@@ -26,9 +27,6 @@ history.listen(location => {
 
 const App = () => {
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  })
 
   return (
     <Router history={history}>
