@@ -14,10 +14,8 @@ import Live from './components/pages/Live';
 import './App.scss';
 
 ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
-useEffect(() => {
-  ReactGA.pageview(window.location.pathname + window.location.search);
-})
 
 const history = createBrowserHistory();
 
@@ -28,6 +26,7 @@ history.listen(location => {
 });
 
 const App = () => {
+
 
   return (
     <Router history={history}>
