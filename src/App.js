@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TagManager from 'react-gtm-module';
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 import Navbar from './components/layout/Navbar';
 import Sidebar from './components/layout/Sidebar';
 import Main from './components/pages/Main';
@@ -12,16 +13,21 @@ import Live from './components/pages/Live';
 
 import './App.scss';
 
-const TagManagerArgs = {
-  gtmId: process.env.REACT_APP_GTM_ID
-}
+const trackingId = process.env.REACT_APP_GA_TRACKING_ID;
 
-TagManager.initialize(TagManagerArgs);
+ReactGA.initialize(trackingId);
+
+const history = createBrowserHistory();
+
+history.listen(location => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
 
 const App = () => {
 
   return (
-    <Router>
+    <Router history={history}>
       <Navbar />
       <Sidebar />
       <Switch>
