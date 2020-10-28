@@ -15,7 +15,7 @@ import './App.scss';
 const TagManagerArgs = {
   gtmId: process.env.REACT_APP_GTM_ID
 }
-console.log(TagManagerArgs)
+
 TagManager.initialize(TagManagerArgs);
 
 const App = () => {
