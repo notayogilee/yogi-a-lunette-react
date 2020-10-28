@@ -16,7 +16,7 @@ import './App.scss';
 const trackingId = process.env.REACT_APP_GA_TRACKING_ID;
 
 ReactGA.initialize(trackingId);
-console.log(trackingId);
+
 const history = createBrowserHistory();
 
 history.listen(location => {
