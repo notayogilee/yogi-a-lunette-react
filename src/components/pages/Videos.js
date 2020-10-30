@@ -51,9 +51,9 @@ const Videos = () => {
       {!type &&
         <div className="styles">
           <ul>
-            {/* <li>
+            <li>
               <Link to="/live">Live Stream</Link>
-            </li> */}
+            </li>
             <li>
               <a href="#!" onClick={() => setType("flow")}>Flow</a>
             </li>
