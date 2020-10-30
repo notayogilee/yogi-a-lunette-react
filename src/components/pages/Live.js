@@ -12,6 +12,7 @@ export default function Live() {
         id="yogialunette"
         height="60%"
         width="60%"
+        hideControls="true"
       />
       <h1><CountdownTimer /></h1>
 
