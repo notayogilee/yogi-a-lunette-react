@@ -58,7 +58,7 @@ export default function Timer() {
       }
 
       {!showTimer &&
-        'Namaste!'
+        "Double cliquez sur l’écran pour l'agrandir.Namaste!"
       }
 
     </div>
