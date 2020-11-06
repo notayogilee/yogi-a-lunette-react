@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.scss';
 
 const Contact = () => {
@@ -34,6 +35,13 @@ const Contact = () => {
               {/* <h2>Unfortunately for the moment all classes can only be given online</h2> */}
 
               <div className="classes">
+                <div className="class">
+                  <h3>Cours Gratuit</h3>
+                  <h3>Tous Niveaux: 30 min Flow & Go!</h3>
+                  <h3>Lundi 18h00 - 18h30</h3>
+                  <Link to="/live">Allons-y</Link>
+                </div>
+
                 <div className="class">
                   <h3>Tous Niveaux: Yin Nidra</h3>
                   <h3>Mardi 20h30-21h30</h3>
