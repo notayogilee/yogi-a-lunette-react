@@ -1,0 +1,42 @@
+.timer-message {
+  color: #fff;
+  #email {
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 1rem;
+  }
+}
+
+
+.copy-button {
+ cursor: pointer;
+ background-color: transparent;
+ outline: none;
+ padding: 0.6rem;
+ border: none;
+ border: solid 1px #fff;
+ border-radius: 15px;
+ color: #fff;
+ position: absolute;
+
+  .fa-copy{
+    color: #fff;
+  }
+ }
+
+ @media (max-height: 767px) {
+   .timer-message{
+     font-size: 10px;
+     height: 100px;
+     overflow-y: auto;
+
+     .email-section {
+       display: block;
+     }
+
+    //  .copy-button {
+    //   display: ; 
+    //  }
+   }
+  }
+  

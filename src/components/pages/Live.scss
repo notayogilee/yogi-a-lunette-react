@@ -11,12 +11,23 @@
   h1 {
     margin-top: 0.5rem;
     padding: 0.5rem;
-    width: 60%;
+    width: 80%;
     font-size: 30px;
     font-weight: inherit;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: solid 0.5px #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .live-container{
+    #yogialunette {
+      width: 90%;
+    }
+    h1 {
+      width: 90%;
+    }
   }
 }
