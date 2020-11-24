@@ -12,7 +12,7 @@ export default function Timer() {
   const [showTimer, setShowTimer] = useState(true);
 
   const startTimer = () => {
-    const countdownDate = new Date('November 23, 2020 18:00:00').getTime();
+    const countdownDate = new Date('November 30, 2020 18:00:00').getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -54,11 +54,14 @@ export default function Timer() {
     <div style={{ color: "#fff" }}>
 
       {showTimer &&
-        `Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`
+        <p>{`Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`}</p>
       }
 
-      {!showTimer &&
-        "Double cliquez sur l’écran pour l'agrandir.Namaste!"
+      {!showTimer && <>
+        <p>Si vous aimez notre travail et désirez contribuer, vous pouvez transférer vos dons précieux à <strong style={{ color: "#fff", letterSpacing: "2px" }}>yogialunette@gmail.com</strong>.
+Votre générosité  nous permet de vous offrir ces vidéos qui sont creés et produits avec tant d'amour!</p>
+        <p>Double cliquez sur l’écran pour l'agrandir. Namaste!</p>
+      </>
       }
 
     </div>
