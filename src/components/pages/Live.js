@@ -5,7 +5,7 @@ import './Live.scss';
 
 export default function Live({ history }) {
   return (
-    <div className="live-container" onClick={() => history.push('/videos')}>
+    <div className="live-container" onDoubleClick={() => history.push('/videos')}>
 
       <TwitchPlayer
         channel="yogialunette"
