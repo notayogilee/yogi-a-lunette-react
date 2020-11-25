@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import videos from '../../_data/video.json';
 import ReactPlayer from 'react-player/youtube';
@@ -11,8 +11,19 @@ const Videos = () => {
   const [id, setId] = useState(0);
   const [type, setType] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  // const [videosPerPage, setVideosPerPage] = useState(2);
-  const videosPerPage = 2;
+  const [videosPerPage, setVideosPerPage] = useState(2);
+  // const videosPerPage = 2;
+
+  useEffect(() => {
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+    if (vw < 769) {
+      setVideosPerPage(videos.length);
+    }
+    console.log('vid')
+
+  }, [])
+
 
   // Truncate video description
   const maxDescriptionLength = 200;
@@ -29,7 +40,7 @@ const Videos = () => {
     }
   }
 
-  const findVideosOfType = function (videos, type) {
+  const findVideosOfType = (videos, type) => {
     if (type === "all") {
       return videos;
     }
@@ -45,6 +56,7 @@ const Videos = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const totalPages = Math.ceil(totalVideosOfType.length / videosPerPage);
+
 
   return (
     <Fragment>

@@ -195,6 +195,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .pagination-footer {
+    display: none;
+   }
+}
+
 @media (max-width: 450px) {
   .video-container {
     padding: 4rem 1rem 1rem 1rem;
@@ -217,10 +223,6 @@
         text-align: center;
       }
     }
-  }
-
-  .pagination-footer {
-    height: 100%;
   }
 }
 

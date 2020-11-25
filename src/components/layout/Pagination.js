@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Pagination.scss';
 
-const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, currentPage }) => {
+const Pagenation = ({ videosPerPage, totalVideosOfType, paginate, currentPage }) => {
 
   const [highlight, setHighlight] = useState("");
   const pageNumbers = [];
@@ -16,7 +16,7 @@ const Pagenation = ({ videosPerPage, totalVideos, totalVideosOfType, paginate, c
         {pageNumbers.map(number => (
           <li key={number} className="page-number">
             {number === currentPage &&
-              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#!" className={"highlight"}>
+              <a onClick={() => { paginate(number); setHighlight("highlight") }} href="#!" className={highlight}>
                 {number}
               </a>
             }
