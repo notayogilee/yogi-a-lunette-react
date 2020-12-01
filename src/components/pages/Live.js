@@ -12,7 +12,7 @@ export default function Live({ history }) {
         id="yogialunette"
         height="60%"
         width="80%"
-        hideControls={true}
+        hideControls={false}
       />
       <h1><CountdownTimer /></h1>
 

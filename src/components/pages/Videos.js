@@ -17,11 +17,9 @@ const Videos = () => {
   useEffect(() => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-    if (vw < 769) {
-      setVideosPerPage(videos.length);
+    if (vw < 800) {
+      setVideosPerPage(10);
     }
-    console.log('vid')
-
   }, [])
 
 
