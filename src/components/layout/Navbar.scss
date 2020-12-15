@@ -45,7 +45,13 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+}
+
+@media (max-height: 420px) {
   #navbar {
     display: none;
   }

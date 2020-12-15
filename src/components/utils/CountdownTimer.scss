@@ -5,38 +5,42 @@
     letter-spacing: 2px;
     padding: 1rem;
   }
-}
-
-
-.copy-button {
- cursor: pointer;
- background-color: transparent;
- outline: none;
- padding: 0.6rem;
- border: none;
- border: solid 1px #fff;
- border-radius: 15px;
- color: #fff;
- position: absolute;
-
-  .fa-copy{
+  
+  .copy-button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    padding: 0.6rem;
+    border: solid 1px #fff;
+    border-radius: 15px;
     color: #fff;
+    position: absolute;
+    
+    .fa-copy{
+      color: #fff;
+    }
   }
- }
+}
 
  @media (max-height: 767px) {
    .timer-message{
-     font-size: 10px;
-     height: 100px;
-     overflow-y: auto;
+     font-size: 15px;
+     height: auto;
+    //  overflow-y: auto;
 
      .email-section {
        display: block;
-     }
 
-    //  .copy-button {
-    //   display: ; 
-    //  }
+       .copy-button{
+        font-size: 10px;
+        border: none;
+        padding: none;
+        
+        .fa-copy {
+          font-size: 10px;
+        }
+       }
+     }
    }
   }
   

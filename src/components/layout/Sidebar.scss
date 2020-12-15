@@ -122,9 +122,10 @@
   }
 }
 
-@media (min-width: 451px) {
+@media (min-width: 420px) and (min-height: 767px) {
   .menu-wrap,
   #sidebar {
     display: none;
   }
 }
+

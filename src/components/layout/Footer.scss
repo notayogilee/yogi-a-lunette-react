@@ -22,7 +22,13 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
+  #footer {
+    display: none;
+  }
+}
+
+@media (max-height: 420px) {
   #footer {
     display: none;
   }

@@ -22,7 +22,7 @@ export default function Timer() {
   const [showTimer, setShowTimer] = useState(true);
 
   const startTimer = () => {
-    const countdownDate = new Date('December 14, 2020 18:00:00').getTime();
+    const countdownDate = new Date('December 21, 2020 18:00:00').getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -76,8 +76,7 @@ export default function Timer() {
               <i className="fas fa-copy fa-lg">{" "}{copy}</i>
             </button>
           </div>
-Votre générosité nous permet de vous offrir ces vidéos qui sont creés et produits avec tant d'amour!
-        <p>Double cliquez sur l’écran pour l'agrandir. Namaste!</p>
+          <p>Votre générosité nous permet de vous offrir ces vidéos qui sont creés et produits avec tant d'amour!</p>
         </div>
       }
     </div>
