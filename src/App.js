@@ -28,7 +28,6 @@ const App = () => {
 
   return (
     <Router history={history}>
-      <Navbar />
       <Sidebar />
       <Switch>
         <Route exact path="/" component={Main} />
@@ -38,7 +37,6 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/live" component={Live} />
       </Switch>
-      <Footer />
     </Router>
   );
 };
