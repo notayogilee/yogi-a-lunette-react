@@ -22,7 +22,7 @@ export default function Timer() {
   const [showTimer, setShowTimer] = useState(true);
 
   const startTimer = () => {
-    const countdownDate = new Date('December 21, 2020 18:00:00').getTime();
+    const countdownDate = new Date('January 4, 2021 18:00:00').getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -64,7 +64,8 @@ export default function Timer() {
     <div style={{ color: "#fff" }}>
 
       {showTimer &&
-        <p>{`Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`}</p>
+        <p>{`
+Joyeuses fêtes! Retour le 4 janvier. Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`}</p>
       }
 
       {!showTimer &&
