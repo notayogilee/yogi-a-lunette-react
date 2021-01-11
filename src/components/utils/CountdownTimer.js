@@ -65,7 +65,7 @@ export default function Timer() {
 
       {showTimer &&
         <p>{`
-Joyeuses fêtes! Retour le 4 janvier. Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`}</p>
+ Prochain cours en direct dans ${days} ${hours} ${minutes} ${seconds}`}</p>
       }
 
       {!showTimer &&
