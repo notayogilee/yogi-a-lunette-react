@@ -43,9 +43,15 @@ const Contact = () => {
                 </div>
 
                 <div className="class">
-                  <h3>Tous Niveaux: Yin Nidra</h3>
-                  <h3>Mardi 20h30-21h30</h3>
-                  <a href="https://idolemyoga.podia.com/mardi-20h00-yoga-nidra-avec-marc-offert-par-idolem-brossard" target="_blank" rel="noopener noreferrer">Allons-y</a>
+                  <h3>Tous Niveaux: Vinyasa Caféine</h3>
+                  <h3>Lundi 8h00-9h00</h3>
+                  <a href="https://idolemyoga.podia.com/direct-1-lundi-08h00-tous-niveaux-yoga-vinyasa-cafeine-avec-claudia-offert-par-idolem-brossard" target="_blank" rel="noopener noreferrer">Allons-y</a>
+                </div>
+
+                <div className="class">
+                  <h3>Tous Niveaux: Yoga flow & STRETCH </h3>
+                  <h3>Mardi 8h00-9h00</h3>
+                  <a href="https://idolemyoga.podia.com/direct-2-08h00-tous-niveaux-yoga-flow-stretch-avec-tanya-offert-par-idolem-brossard" target="_blank" rel="noopener noreferrer">Allons-y</a>
                 </div>
 
                 <div className="class">
