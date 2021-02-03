@@ -22,7 +22,7 @@ export default function Timer() {
   const [showTimer, setShowTimer] = useState(true);
 
   const startTimer = () => {
-    const countdownDate = new Date('February 1, 2021 18:00:00').getTime();
+    const countdownDate = new Date('February 8, 2021 18:00:00').getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
