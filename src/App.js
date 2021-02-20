@@ -9,7 +9,7 @@ import About from './components/pages/About';
 import Videos from './components/pages/Videos';
 import Contact from './components/pages/Contact';
 import Footer from './components/layout/Footer';
-import Live from './components/pages/Live';
+// import Live from './components/pages/Live';
 
 import './App.scss';
 
@@ -35,7 +35,7 @@ const App = () => {
         <Route exact path="/videos" component={Videos} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/live" component={Live} />
+        {/* <Route exact path="/live" component={Live} /> */}
       </Switch>
     </Router>
   );
